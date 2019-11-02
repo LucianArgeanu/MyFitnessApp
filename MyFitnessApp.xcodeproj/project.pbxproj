@@ -14,6 +14,7 @@
 		DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2502368C97000B7FC5A /* Main.storyboard */; };
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
+		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DBBCA2532368C97500B7FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				C764AEE5776333BF4209A8CF /* Pods-MyFitnessApp.debug.xcconfig */,
 				1588E3E45E8835B0E6BEEC30 /* Pods-MyFitnessApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				DBBCA2532368C97500B7FC5A /* Assets.xcassets */,
 				DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */,
 				DBBCA2582368C97500B7FC5A /* Info.plist */,
+				DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */,
 			);
 			path = MyFitnessApp;
 			sourceTree = "<group>";
@@ -190,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBBCA24F2368C97000B7FC5A /* ViewController.swift in Sources */,
+				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
 				DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */,
 				DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */,
 			);
