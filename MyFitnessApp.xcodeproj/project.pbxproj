@@ -15,6 +15,7 @@
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
 		DBDA970F236F47380035B661 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA970E236F47380035B661 /* InputData.swift */; };
+		DBDA9712236F50710035B661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA9711236F50710035B661 /* LoginViewController.swift */; };
 		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBDA970E236F47380035B661 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
+		DBDA9711236F50710035B661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			children = (
 				DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */,
 				DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */,
+				DBDA9711236F50710035B661 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDA9712236F50710035B661 /* LoginViewController.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
