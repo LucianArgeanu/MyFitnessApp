@@ -10,10 +10,11 @@
 		97921C1314F862EAAA82D79C /* Pods_MyFitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34461F95B6129486AB36FC52 /* Pods_MyFitnessApp.framework */; };
 		DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */; };
 		DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */; };
-		DBBCA24F2368C97000B7FC5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24E2368C97000B7FC5A /* ViewController.swift */; };
+		DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */; };
 		DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2502368C97000B7FC5A /* Main.storyboard */; };
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
+		DBDA970F236F47380035B661 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA970E236F47380035B661 /* InputData.swift */; };
 		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +25,12 @@
 		DBBCA2472368C97000B7FC5A /* MyFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBBCA24E2368C97000B7FC5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDataCaloriersViewController.swift; sourceTree = "<group>"; };
 		DBBCA2512368C97000B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBBCA2532368C97500B7FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBDA970E236F47380035B661 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
 		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,14 +86,39 @@
 			children = (
 				DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */,
 				DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */,
-				DBBCA24E2368C97000B7FC5A /* ViewController.swift */,
-				DBBCA2502368C97000B7FC5A /* Main.storyboard */,
+				DBDA9710236F47400035B661 /* Model */,
+				DBDA970D236F47270035B661 /* View */,
+				DBDA970C236F471F0035B661 /* Controller */,
 				DBBCA2532368C97500B7FC5A /* Assets.xcassets */,
 				DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */,
 				DBBCA2582368C97500B7FC5A /* Info.plist */,
-				DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */,
 			);
 			path = MyFitnessApp;
+			sourceTree = "<group>";
+		};
+		DBDA970C236F471F0035B661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */,
+				DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBDA970D236F47270035B661 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBBCA2502368C97000B7FC5A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBDA9710236F47400035B661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBDA970E236F47380035B661 /* InputData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBCA24F2368C97000B7FC5A /* ViewController.swift in Sources */,
+				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
+				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
 				DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */,
 				DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */,
