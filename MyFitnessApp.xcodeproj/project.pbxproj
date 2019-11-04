@@ -15,7 +15,9 @@
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
 		DBDA970F236F47380035B661 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA970E236F47380035B661 /* InputData.swift */; };
-		DBDA9712236F50710035B661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA9711236F50710035B661 /* LoginViewController.swift */; };
+		DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA9711236F50710035B661 /* AuthenticationViewController.swift */; };
+		DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97132370BE560035B661 /* LoginViewController.swift */; };
+		DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97152370BE730035B661 /* RegisterViewController.swift */; };
 		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +34,9 @@
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBDA970E236F47380035B661 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
-		DBDA9711236F50710035B661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBDA9711236F50710035B661 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		DBDA97132370BE560035B661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBDA97152370BE730035B661 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +96,6 @@
 				DBDA970D236F47270035B661 /* View */,
 				DBDA970C236F471F0035B661 /* Controller */,
 				DBBCA2532368C97500B7FC5A /* Assets.xcassets */,
-				DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */,
 				DBBCA2582368C97500B7FC5A /* Info.plist */,
 			);
 			path = MyFitnessApp;
@@ -103,7 +106,9 @@
 			children = (
 				DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */,
 				DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */,
-				DBDA9711236F50710035B661 /* LoginViewController.swift */,
+				DBDA9711236F50710035B661 /* AuthenticationViewController.swift */,
+				DBDA97132370BE560035B661 /* LoginViewController.swift */,
+				DBDA97152370BE730035B661 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DBBCA2502368C97000B7FC5A /* Main.storyboard */,
+				DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBDA9712236F50710035B661 /* LoginViewController.swift in Sources */,
+				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
+				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
+				DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */,
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
 				DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */,

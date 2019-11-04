@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  MyFitnessApp
 //
-//  Created by Argeanu Lucian on 03/11/2019.
+//  Created by Argeanu Lucian on 04/11/2019.
 //  Copyright © 2019 Argeanu Lucian. All rights reserved.
 //
 
