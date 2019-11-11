@@ -58,11 +58,13 @@ class LoginViewController: UIViewController {
         let emailRegex = validateEmail(candidate: emailTextField?.text ?? "Enter an email")
         let passwordRegex = validatePassword(candidate: passwordTextField?.text ?? "Enter an password")
         if emailRegex == false && passwordRegex == false{
-            errorLoginLabel.text = "Email or password is incorrect"
+            errorLoginLabel.text = "Email or password is badly formatted"
         }else if emailRegex == false{
             errorLoginLabel.text = "Email is invalid"
         }else if passwordRegex == false{
             errorLoginLabel.text = "Password is invalid"
+        }else{
+            errorLoginLabel.text = "Email or password is incorrect"
         }
     }
     
