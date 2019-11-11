@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
         }else if emailRegex == false{
             errorLoginLabel.text = "Email is invalid"
         }else if passwordRegex == false{
-            errorLoginLabel.text = "Password is invalid"
+            errorLoginLabel.text = "The password is invalid"
         }else{
             errorLoginLabel.text = "Email or password is incorrect"
         }
