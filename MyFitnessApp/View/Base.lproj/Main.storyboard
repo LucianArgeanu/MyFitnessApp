@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaH-2w-pSN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r6C-Rw-K1Y">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-qp-RyM">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="se0-mN-yXv" userLabel="Register Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-wG-UMu">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="vue-ZX-44f" userLabel="Login Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -239,6 +239,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byN-dx-EzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1484" y="-309.60591133004925"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Rn8-rg-kUx">
+            <objects>
+                <tableViewController id="r6C-Rw-K1Y" customClass="TableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JSK-o7-g14">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="326" id="RiS-3U-vvJ" customClass="TableViewCell" customModule="MyFitnessApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="326"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RiS-3U-vvJ" id="zZI-7E-1sh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getWorkouts" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-tv-7Li">
+                                            <rect key="frame" x="31" y="26" width="313" height="274"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="4WB-SD-GpO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-o6-Zfe">
+                                            <rect key="frame" x="156" y="110" width="71" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="t4F-tv-7Li" secondAttribute="bottom" constant="15" id="8OO-0J-GYB"/>
+                                        <constraint firstItem="t4F-tv-7Li" firstAttribute="top" secondItem="zZI-7E-1sh" secondAttribute="topMargin" constant="15" id="Y8G-em-eP8"/>
+                                        <constraint firstItem="t4F-tv-7Li" firstAttribute="leading" secondItem="zZI-7E-1sh" secondAttribute="leadingMargin" constant="15" id="pBl-4x-zYb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="t4F-tv-7Li" secondAttribute="trailing" constant="15" id="qf2-dr-LeZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="t4F-tv-7Li" id="e0m-cx-eob"/>
+                                    <outlet property="label" destination="5Og-o6-Zfe" id="b92-NU-vO9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="r6C-Rw-K1Y" id="Qnp-Ud-Ey0"/>
+                            <outlet property="delegate" destination="r6C-Rw-K1Y" id="BSA-TG-4RQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-em-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693.5999999999999" y="-546.05911330049264"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="LxP-Vi-1vl">
@@ -620,6 +673,7 @@
     </scenes>
     <resources>
         <image name="edgar-chaparro-sHfo3WOgGTU-unsplash" width="840" height="1260"/>
+        <image name="getWorkouts" width="2000" height="1333.3333740234375"/>
         <image name="nick-nice-gPm8h3DS1s4-unsplash" width="566.66668701171875" height="1007.6666870117188"/>
         <image name="trx-home" width="865.33331298828125" height="1295.3333740234375"/>
     </resources>
