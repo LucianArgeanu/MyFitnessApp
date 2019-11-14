@@ -11,21 +11,20 @@ import UIKit
 class TableViewController: UITableViewController {
 
     
-    var array : [String] = ["getMeals","getWorkouts","getStep","trx-home","getMeasures"]
+    var array : [CellTableViewInfo] = CellTableViewInfo.populateInfo()
+    
+//    ["getMeals","getWorkouts","getStep","getMeasure"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.separatorStyle = .none
+        tableView.delegate = self
+        tableView.dataSource = self
+//        tableView.separatorStyle = .none
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+  
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return array.count
@@ -35,9 +34,12 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
 
-        cell.img.image = UIImage(named: array[indexPath.row])
-        cell.label.text = array[indexPath.row]
-
+        
+        let cellInfo = array[indexPath.row]
+        
+        cell.img.image = UIImage(named: cellInfo.imageName)
+        cell.label.text = cellInfo.description
+      
         return cell
     }
  

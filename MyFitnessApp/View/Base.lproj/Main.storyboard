@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-qp-RyM">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="se0-mN-yXv" userLabel="Register Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-wG-UMu">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="vue-ZX-44f" userLabel="Login Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -244,41 +244,51 @@
         <scene sceneID="Rn8-rg-kUx">
             <objects>
                 <tableViewController id="r6C-Rw-K1Y" customClass="TableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JSK-o7-g14">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JSK-o7-g14">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Vqc-p5-8GF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <viewLayoutGuide key="safeArea" id="XVN-Vf-N26"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="326" id="RiS-3U-vvJ" customClass="TableViewCell" customModule="MyFitnessApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="326"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="282" id="RiS-3U-vvJ" customClass="TableViewCell" customModule="MyFitnessApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="230" width="375" height="282"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RiS-3U-vvJ" id="zZI-7E-1sh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getWorkouts" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-tv-7Li">
-                                            <rect key="frame" x="31" y="26" width="313" height="274"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getStep" translatesAutoresizingMaskIntoConstraints="NO" id="eDf-am-9dF">
+                                            <rect key="frame" x="24" y="11" width="327" height="260"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="250" id="4WB-SD-GpO"/>
+                                                <constraint firstAttribute="height" constant="250" id="tNK-O6-toe"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-o6-Zfe">
-                                            <rect key="frame" x="156" y="110" width="71" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-o6-Zfe">
+                                            <rect key="frame" x="46" y="149" width="89" height="42"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="t4F-tv-7Li" secondAttribute="bottom" constant="15" id="8OO-0J-GYB"/>
-                                        <constraint firstItem="t4F-tv-7Li" firstAttribute="top" secondItem="zZI-7E-1sh" secondAttribute="topMargin" constant="15" id="Y8G-em-eP8"/>
-                                        <constraint firstItem="t4F-tv-7Li" firstAttribute="leading" secondItem="zZI-7E-1sh" secondAttribute="leadingMargin" constant="15" id="pBl-4x-zYb"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="t4F-tv-7Li" secondAttribute="trailing" constant="15" id="qf2-dr-LeZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="eDf-am-9dF" secondAttribute="bottom" id="FSN-6R-jPs"/>
+                                        <constraint firstItem="eDf-am-9dF" firstAttribute="leading" secondItem="zZI-7E-1sh" secondAttribute="leadingMargin" constant="8" id="MMm-w0-7uU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5Og-o6-Zfe" secondAttribute="bottom" constant="80" id="Rgk-eB-U7o"/>
+                                        <constraint firstItem="5Og-o6-Zfe" firstAttribute="leading" secondItem="zZI-7E-1sh" secondAttribute="leadingMargin" constant="30" id="md5-Gk-ZoP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="eDf-am-9dF" secondAttribute="trailing" constant="8" id="oqH-kY-Alf"/>
+                                        <constraint firstItem="eDf-am-9dF" firstAttribute="top" secondItem="zZI-7E-1sh" secondAttribute="topMargin" id="xf9-j4-UD3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="image" destination="t4F-tv-7Li" id="e0m-cx-eob"/>
+                                    <outlet property="img" destination="eDf-am-9dF" id="PF6-Vb-3T3"/>
                                     <outlet property="label" destination="5Og-o6-Zfe" id="b92-NU-vO9"/>
                                 </connections>
                             </tableViewCell>
@@ -673,7 +683,7 @@
     </scenes>
     <resources>
         <image name="edgar-chaparro-sHfo3WOgGTU-unsplash" width="840" height="1260"/>
-        <image name="getWorkouts" width="2000" height="1333.3333740234375"/>
+        <image name="getStep" width="1418.6666259765625" height="944"/>
         <image name="nick-nice-gPm8h3DS1s4-unsplash" width="566.66668701171875" height="1007.6666870117188"/>
         <image name="trx-home" width="865.33331298828125" height="1295.3333740234375"/>
     </resources>

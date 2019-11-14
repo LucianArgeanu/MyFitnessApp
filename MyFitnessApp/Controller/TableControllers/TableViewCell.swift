@@ -10,6 +10,12 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    var cellTable : CellTableViewInfo!{
+        didSet{
+            updateUI()
+        }
+    }
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var img: UIImageView!
     
@@ -24,5 +30,10 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    
+    func updateUI(){
+        img.image = UIImage(named: cellTable.imageName)
+        label.text = cellTable.description
+        img.layer.cornerRadius = 12.0
+        img.layer.masksToBounds = true
+    }
 }
