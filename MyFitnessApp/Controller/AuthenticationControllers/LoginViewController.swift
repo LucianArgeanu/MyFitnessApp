@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
                 self?.loginValidation()
             }else{
                 let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-                let viewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+                let viewController = storyboard.instantiateViewController(identifier: "TableViewController")
                 self?.navigationController?.pushViewController(viewController, animated: true)
                 //                self.performSegue(withIdentifier: "goToMain", sender: self)
             }

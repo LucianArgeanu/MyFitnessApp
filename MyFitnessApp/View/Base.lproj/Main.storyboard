@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r6C-Rw-K1Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaH-2w-pSN">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -34,7 +34,7 @@
                                             <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginButtonPressed:" destination="w2m-8i-BIw" eventType="touchUpInside" id="drq-6p-9Td"/>
+                                            <action selector="loginButtonPressed:" destination="w2m-8i-BIw" eventType="touchUpInside" id="ter-BJ-xFT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT6-em-rxi">
@@ -47,7 +47,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
-                                            <action selector="RegisterButtonPressed:" destination="w2m-8i-BIw" eventType="touchUpInside" id="EGM-ti-xVq"/>
+                                            <action selector="RegisterButtonPressed:" destination="w2m-8i-BIw" eventType="touchUpInside" id="t5N-SI-W19"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -243,20 +243,53 @@
         <!--Table View Controller-->
         <scene sceneID="Rn8-rg-kUx">
             <objects>
-                <tableViewController id="r6C-Rw-K1Y" customClass="TableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="r6C-Rw-K1Y" customClass="TableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JSK-o7-g14">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Vqc-p5-8GF">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APd-Qy-AhL">
+                                    <rect key="frame" x="268" y="62" width="82" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="Log out">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="logOutButtonPressed:" destination="r6C-Rw-K1Y" eventType="touchUpInside" id="sFM-hM-QKb"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STAY FIT" translatesAutoresizingMaskIntoConstraints="NO" id="xgr-xS-7Fd">
+                                    <rect key="frame" x="25" y="8" width="90" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="B6N-zw-MeL"/>
+                                        <constraint firstAttribute="width" constant="90" id="u4J-Bp-6iC"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-n8-iW0">
+                                    <rect key="frame" x="35" y="122" width="48" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="xgr-xS-7Fd" firstAttribute="top" secondItem="XVN-Vf-N26" secondAttribute="top" constant="8" id="5XJ-Aq-sFd"/>
+                                <constraint firstItem="XVN-Vf-N26" firstAttribute="bottom" secondItem="TLu-n8-iW0" secondAttribute="bottom" constant="20" id="ESE-xL-fC2"/>
+                                <constraint firstItem="APd-Qy-AhL" firstAttribute="centerY" secondItem="Vqc-p5-8GF" secondAttribute="centerY" id="Er7-ng-uyP"/>
+                                <constraint firstItem="TLu-n8-iW0" firstAttribute="leading" secondItem="XVN-Vf-N26" secondAttribute="leading" constant="35" id="NHn-L7-bRj"/>
+                                <constraint firstItem="xgr-xS-7Fd" firstAttribute="leading" secondItem="XVN-Vf-N26" secondAttribute="leading" constant="25" id="dPF-xh-zaO"/>
+                                <constraint firstItem="XVN-Vf-N26" firstAttribute="trailing" secondItem="APd-Qy-AhL" secondAttribute="trailing" constant="25" id="vXH-gf-ssr"/>
+                            </constraints>
                             <viewLayoutGuide key="safeArea" id="XVN-Vf-N26"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="282" id="RiS-3U-vvJ" customClass="TableViewCell" customModule="MyFitnessApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="230" width="375" height="282"/>
+                                <rect key="frame" x="0.0" y="194" width="375" height="282"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RiS-3U-vvJ" id="zZI-7E-1sh">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
@@ -298,6 +331,10 @@
                             <outlet property="delegate" destination="r6C-Rw-K1Y" id="BSA-TG-4RQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="userImage" destination="xgr-xS-7Fd" id="ewD-Sj-OLs"/>
+                        <outlet property="userLabelName" destination="TLu-n8-iW0" id="saC-a9-Li9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-em-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,6 +719,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="STAY FIT" width="166.66667175292969" height="166.66667175292969"/>
         <image name="edgar-chaparro-sHfo3WOgGTU-unsplash" width="840" height="1260"/>
         <image name="getStep" width="1418.6666259765625" height="944"/>
         <image name="nick-nice-gPm8h3DS1s4-unsplash" width="566.66668701171875" height="1007.6666870117188"/>
