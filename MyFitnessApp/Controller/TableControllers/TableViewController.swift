@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
         
         cell.img.image = UIImage(named: cellInfo.imageName)
         cell.label.text = cellInfo.description
-      
+  
         return cell
     }
  

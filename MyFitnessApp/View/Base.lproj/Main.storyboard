@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaH-2w-pSN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYE-Fh-ZL5">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -306,6 +306,7 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-o6-Zfe">
                                             <rect key="frame" x="46" y="149" width="89" height="42"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -339,6 +340,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-em-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2693.5999999999999" y="-546.05911330049264"/>
+        </scene>
+        <!--Workout Table View Controller-->
+        <scene sceneID="HRk-ei-flq">
+            <objects>
+                <viewController id="sYE-Fh-ZL5" customClass="WorkoutTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TCq-YO-9eX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-vt-FI5">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="top" secondItem="SNr-vI-3Sb" secondAttribute="top" id="3HS-JA-B1S"/>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="leading" secondItem="SNr-vI-3Sb" secondAttribute="leading" id="DIy-sl-uUF"/>
+                            <constraint firstItem="SNr-vI-3Sb" firstAttribute="trailing" secondItem="nNi-vt-FI5" secondAttribute="trailing" id="UDt-Ay-LFb"/>
+                            <constraint firstItem="SNr-vI-3Sb" firstAttribute="bottom" secondItem="nNi-vt-FI5" secondAttribute="bottom" id="h6a-1K-Y4u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SNr-vI-3Sb"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nNi-vt-FI5" id="VQr-9y-9HC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVu-1o-Z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751" y="-624"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="LxP-Vi-1vl">

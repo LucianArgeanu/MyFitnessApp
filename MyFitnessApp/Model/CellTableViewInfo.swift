@@ -11,7 +11,7 @@ import UIKit
 struct CellTableViewInfo{
     let description : String
     let imageName : String
-    
+   
     static func populateInfo() -> [CellTableViewInfo]{
          let cell1 = CellTableViewInfo(description: "getWorkouts", imageName: "getWorkouts")
          let cell2 = CellTableViewInfo(description: "getMeals", imageName: "getMeals")

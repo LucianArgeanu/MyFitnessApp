@@ -35,5 +35,6 @@ class TableViewCell: UITableViewCell {
         label.text = cellTable.description
         img.layer.cornerRadius = 12.0
         img.layer.masksToBounds = true
+        label.layer.cornerRadius = 10.0
     }
 }
