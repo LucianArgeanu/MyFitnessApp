@@ -10,9 +10,10 @@ import UIKit
 
 class WorkoutCollectionCell: UICollectionViewCell {
 
+
     @IBOutlet weak var collectionImage: UIImageView!
-    
-    override func awakeFromNib() {
+
+    override  func awakeFromNib() {
         super.awakeFromNib()
         
     }

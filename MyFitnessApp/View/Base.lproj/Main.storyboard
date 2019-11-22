@@ -349,17 +349,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-vt-FI5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-vt-FI5">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workouts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQR-OJ-Rm3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nNi-vt-FI5" firstAttribute="top" secondItem="SNr-vI-3Sb" secondAttribute="top" id="3HS-JA-B1S"/>
-                            <constraint firstItem="nNi-vt-FI5" firstAttribute="leading" secondItem="SNr-vI-3Sb" secondAttribute="leading" id="DIy-sl-uUF"/>
-                            <constraint firstItem="SNr-vI-3Sb" firstAttribute="trailing" secondItem="nNi-vt-FI5" secondAttribute="trailing" id="UDt-Ay-LFb"/>
-                            <constraint firstItem="SNr-vI-3Sb" firstAttribute="bottom" secondItem="nNi-vt-FI5" secondAttribute="bottom" id="h6a-1K-Y4u"/>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="trailing" secondItem="SNr-vI-3Sb" secondAttribute="trailing" id="46V-Aj-eq8"/>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="top" secondItem="SNr-vI-3Sb" secondAttribute="top" id="fL9-Ue-LDd"/>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="leading" secondItem="SNr-vI-3Sb" secondAttribute="leading" id="tWq-hR-2pP"/>
+                            <constraint firstItem="nNi-vt-FI5" firstAttribute="bottom" secondItem="SNr-vI-3Sb" secondAttribute="bottom" id="yUV-Bb-EoQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SNr-vI-3Sb"/>
                     </view>
@@ -369,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVu-1o-Z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="-624"/>
+            <point key="canvasLocation" x="3749.5999999999999" y="-624.38423645320199"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="LxP-Vi-1vl">

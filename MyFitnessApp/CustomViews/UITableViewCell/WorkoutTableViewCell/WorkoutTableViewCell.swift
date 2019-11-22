@@ -11,10 +11,10 @@ import UIKit
 class WorkoutTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageCell : UIImageView!
-    
+    @IBOutlet weak var txt : UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
