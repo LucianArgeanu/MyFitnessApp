@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkoutTableViewCell: UITableViewCell {
+class CellTable: UITableViewCell {
 
     @IBOutlet weak var imageCell : UIImageView!
     @IBOutlet weak var txt : UILabel!

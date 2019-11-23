@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WorkoutTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="299" id="KGk-i7-Jjw" customClass="WorkoutTableViewCell" customModule="MyFitnessApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellTable" selectionStyle="default" indentationWidth="10" rowHeight="299" id="KGk-i7-Jjw" customClass="CellTable" customModule="MyFitnessApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="341" height="299"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -51,8 +51,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageCell" destination="35P-KC-tl5" id="Pbd-nB-rIr"/>
-                <outlet property="txt" destination="T4T-eq-mpu" id="e82-Tz-eHl"/>
+                <outlet property="imageCell" destination="35P-KC-tl5" id="6Uf-O8-IV9"/>
+                <outlet property="txt" destination="T4T-eq-mpu" id="2PN-1d-Tkd"/>
             </connections>
             <point key="canvasLocation" x="147.10144927536234" y="187.16517857142856"/>
         </tableViewCell>

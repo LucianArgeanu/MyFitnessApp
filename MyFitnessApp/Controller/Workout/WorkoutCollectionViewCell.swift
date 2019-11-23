@@ -20,7 +20,7 @@ class WorkoutCollectionViewCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.register(UINib(nibName: "WorkoutCollectionCell", bundle: nil), forCellWithReuseIdentifier: "WorkoutCollectionCell")
+        collectionView.register(UINib(nibName: "CellCollection", bundle: nil), forCellWithReuseIdentifier: "CellCollection")
     }
     
 }
@@ -33,7 +33,7 @@ extension WorkoutCollectionViewCell : UICollectionViewDelegate, UICollectionView
         return imagesArray.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkoutCollectionCell", for: indexPath) as! WorkoutCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellCollection", for: indexPath) as! CellCollection
         
         
         cell.collectionImage.image = UIImage(named: imagesArray[indexPath.row])

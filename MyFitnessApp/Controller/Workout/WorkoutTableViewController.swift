@@ -20,7 +20,7 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
         tableView.dataSource = self
         tableView.estimatedRowHeight = 350
         tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "WorkoutTableViewCell", bundle: nil), forCellReuseIdentifier: "WorkoutTableViewCell")
+        tableView.register(UINib(nibName: "CellTable", bundle: nil), forCellReuseIdentifier: "CellTable")
         tableView.register(UINib(nibName: "WorkoutTableViewCollectionCell", bundle: nil), forCellReuseIdentifier: "WorkoutCollectionViewCell")
     }
     
@@ -31,7 +31,7 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 1 || indexPath.row == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutTableViewCell", for: indexPath) as! WorkoutTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
             cell.imageCell.image = UIImage(named: array[indexPath.row])
             cell.txt.text = array[indexPath.row]
             return cell
