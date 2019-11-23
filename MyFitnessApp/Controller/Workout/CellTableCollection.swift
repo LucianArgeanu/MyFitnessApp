@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkoutCollectionViewCell: UITableViewCell {
+class CellTableCollection: UITableViewCell {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -25,7 +25,7 @@ class WorkoutCollectionViewCell: UITableViewCell {
     
 }
 
-extension WorkoutCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension CellTableCollection : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

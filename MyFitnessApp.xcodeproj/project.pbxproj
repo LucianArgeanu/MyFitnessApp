@@ -15,8 +15,8 @@
 		DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */; };
 		DB88230B238718C300FD4B6A /* CellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB882309238718C300FD4B6A /* CellTable.swift */; };
 		DB88230C238718C300FD4B6A /* CellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88230A238718C300FD4B6A /* CellTable.xib */; };
-		DB88230F23871E1100FD4B6A /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88230D23871E1100FD4B6A /* WorkoutCollectionViewCell.swift */; };
-		DB882318238722E500FD4B6A /* WorkoutTableViewCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB882316238722E500FD4B6A /* WorkoutTableViewCollectionCell.xib */; };
+		DB88230F23871E1100FD4B6A /* CellTableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88230D23871E1100FD4B6A /* CellTableCollection.swift */; };
+		DB882318238722E500FD4B6A /* CellTableCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB882316238722E500FD4B6A /* CellTableCollection.xib */; };
 		DB88232423897B3200FD4B6A /* CellCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88232223897B3200FD4B6A /* CellCollection.swift */; };
 		DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88232323897B3200FD4B6A /* CellCollection.xib */; };
 		DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */; };
@@ -44,8 +44,8 @@
 		DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
 		DB882309238718C300FD4B6A /* CellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTable.swift; sourceTree = "<group>"; };
 		DB88230A238718C300FD4B6A /* CellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTable.xib; sourceTree = "<group>"; };
-		DB88230D23871E1100FD4B6A /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
-		DB882316238722E500FD4B6A /* WorkoutTableViewCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutTableViewCollectionCell.xib; sourceTree = "<group>"; };
+		DB88230D23871E1100FD4B6A /* CellTableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableCollection.swift; sourceTree = "<group>"; };
+		DB882316238722E500FD4B6A /* CellTableCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTableCollection.xib; sourceTree = "<group>"; };
 		DB88232223897B3200FD4B6A /* CellCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollection.swift; sourceTree = "<group>"; };
 		DB88232323897B3200FD4B6A /* CellCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollection.xib; sourceTree = "<group>"; };
 		DBBCA2472368C97000B7FC5A /* MyFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */,
-				DB88230D23871E1100FD4B6A /* WorkoutCollectionViewCell.swift */,
-				DB882316238722E500FD4B6A /* WorkoutTableViewCollectionCell.xib */,
+				DB88230D23871E1100FD4B6A /* CellTableCollection.swift */,
+				DB882316238722E500FD4B6A /* CellTableCollection.xib */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */,
 				DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */,
 				DBDA971A2371F4C30035B661 /* GoogleService-Info.plist in Resources */,
-				DB882318238722E500FD4B6A /* WorkoutTableViewCollectionCell.xib in Resources */,
+				DB882318238722E500FD4B6A /* CellTableCollection.xib in Resources */,
 				DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */,
 				DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */,
 			);
@@ -372,7 +372,7 @@
 				DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */,
 				DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */,
 				DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */,
-				DB88230F23871E1100FD4B6A /* WorkoutCollectionViewCell.swift in Sources */,
+				DB88230F23871E1100FD4B6A /* CellTableCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
