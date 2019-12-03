@@ -10,13 +10,13 @@ import UIKit
 import Firebase
 
 class TableViewController: UITableViewController {
-
+    
     @IBOutlet weak var userImage: UIImageView!
     let email = Auth.auth().currentUser?.email
     @IBOutlet weak var userLabelName: UILabel!
     var array : [CellTableViewInfo] = CellTableViewInfo.populateInfo()
-    
-//    ["getMeals","getWorkouts","getStep","getMeasure"]
+    var controllerArray : [String] = ["WorkoutTableViewController","MealTableViewController","StepViewController","InputDataCaloriesViewController"]
+    //    ["getMeals","getWorkouts","getStep","getMeasure"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,31 +24,39 @@ class TableViewController: UITableViewController {
         tableView.dataSource = self
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
-//        tableView.separatorStyle = .none
+        //        tableView.separatorStyle = .none
         userLabelName.text = String(email ?? "Username")
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-
+    
     // MARK: - Table view data source
-
-  
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return array.count
     }
-
- 
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-
+        
         
         let cellInfo = array[indexPath.row]
         
         cell.img.image = UIImage(named: cellInfo.imageName)
         cell.label.text = cellInfo.description
-  
+        
         return cell
     }
- 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let UIController = storyboard.instantiateViewController(withIdentifier: controllerArray[indexPath.row]) 
+        self.navigationController?.pushViewController(UIController, animated: true)
+    }
+    
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
         do{
             try  Auth.auth().signOut()

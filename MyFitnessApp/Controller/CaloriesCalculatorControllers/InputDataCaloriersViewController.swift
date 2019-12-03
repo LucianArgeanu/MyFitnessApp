@@ -15,7 +15,7 @@ class InputDataCaloriesViewController: UIViewController, UIPickerViewDelegate, U
     
     @IBOutlet weak var sexInputLabel: UITextField!
     @IBOutlet weak var activityInputLabel: UITextField!
-   
+    
     @IBOutlet weak var weightSlider: UISlider!
     
     @IBOutlet weak var heightSlider: UISlider!
@@ -25,13 +25,13 @@ class InputDataCaloriesViewController: UIViewController, UIPickerViewDelegate, U
     @IBOutlet weak var kgResultLabel: UILabel!
     @IBOutlet weak var ageResultLabel: UILabel!
     @IBOutlet weak var heightResultLabel: UILabel!
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initialize()
         
-        }
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -99,9 +99,10 @@ class InputDataCaloriesViewController: UIViewController, UIPickerViewDelegate, U
         activityPicker.tag = 2
         activityInputLabel.inputView = activityPicker
         activityInputLabel.delegate = self
+        self.navigationController?.isNavigationBarHidden = false
     }
-
-   
+    
+    
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         inputData.height = Double(sender.value)
         let heightText = String(format: "%3.0f", inputData.height)
@@ -129,7 +130,7 @@ class InputDataCaloriesViewController: UIViewController, UIPickerViewDelegate, U
         let ageMultiplier = 5.0
         let weightMultiplier = 10.0
         let heightMultiplier = 6.25
-
+        
         if inputData.selectedSexValue == "Female"{
             inputData.bmrValue = (Double(weightMultiplier) * inputData.weight) + (heightMultiplier * inputData.height) - (ageMultiplier * inputData.age) - 161
         }else if inputData.selectedSexValue == "Male"{
@@ -161,7 +162,7 @@ class InputDataCaloriesViewController: UIViewController, UIPickerViewDelegate, U
         }
     }
     
- 
+    
     
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYE-Fh-ZL5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaH-2w-pSN">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -306,7 +306,6 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-o6-Zfe">
                                             <rect key="frame" x="46" y="149" width="89" height="42"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -339,12 +338,68 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-em-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693.5999999999999" y="-546.05911330049264"/>
+            <point key="canvasLocation" x="2609" y="117"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="LnQ-1v-DfX">
+            <objects>
+                <viewController storyboardIdentifier="StepViewController" id="RTm-Gp-zJY" customClass="StepViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m1v-hR-VBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mKz-Vd-alP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jI1-ee-9ge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3806" y="117"/>
+        </scene>
+        <!--Meal Table View Controller-->
+        <scene sceneID="0AW-vB-1MA">
+            <objects>
+                <viewController storyboardIdentifier="MealTableViewController" id="5ZW-J0-C6V" customClass="MealTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0LT-hc-z2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-RP-Gr0">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CsG-r1-yGZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <connections>
+                                    <outlet property="dataSource" destination="5ZW-J0-C6V" id="Dcw-yK-Y8Z"/>
+                                    <outlet property="delegate" destination="5ZW-J0-C6V" id="nW5-6q-bLn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B3g-RP-Gr0" firstAttribute="leading" secondItem="YbP-KV-eO5" secondAttribute="leading" id="6kQ-1R-Kfs"/>
+                            <constraint firstItem="YbP-KV-eO5" firstAttribute="bottom" secondItem="B3g-RP-Gr0" secondAttribute="bottom" id="Hbo-yt-67P"/>
+                            <constraint firstItem="B3g-RP-Gr0" firstAttribute="top" secondItem="YbP-KV-eO5" secondAttribute="top" id="OS8-cu-5BS"/>
+                            <constraint firstItem="YbP-KV-eO5" firstAttribute="trailing" secondItem="B3g-RP-Gr0" secondAttribute="trailing" id="igW-3S-3a8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YbP-KV-eO5"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="B3g-RP-Gr0" id="jhF-By-oyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MS2-B0-Cav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3805.5999999999999" y="-672.41379310344826"/>
         </scene>
         <!--Workout Table View Controller-->
         <scene sceneID="HRk-ei-flq">
             <objects>
-                <viewController id="sYE-Fh-ZL5" customClass="WorkoutTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WorkoutTableViewController" id="sYE-Fh-ZL5" customClass="WorkoutTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TCq-YO-9eX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,7 +408,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workouts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQR-OJ-Rm3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                     <nil key="textColor"/>
@@ -376,34 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVu-1o-Z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3749.5999999999999" y="-624.38423645320199"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="LxP-Vi-1vl">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="bMx-H8-FXp" customClass="HomeViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lGg-ve-xHy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-eK-a80">
-                                <rect key="frame" x="152" y="474" width="86" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="ButtonTest:" destination="bMx-H8-FXp" eventType="touchUpInside" id="MUd-In-ajc"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="IHk-m4-QCP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gm5-px-yzv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gs4-Ux-OXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2727" y="117"/>
+            <point key="canvasLocation" x="2608.8000000000002" y="-671.67487684729065"/>
         </scene>
         <!--Input Data Calories View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -624,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4030" y="117"/>
+            <point key="canvasLocation" x="6854" y="117"/>
         </scene>
         <!--Result Calories View Controller-->
         <scene sceneID="45e-sq-9cO">
@@ -735,7 +763,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9a-K3-Bfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4860" y="117"/>
+            <point key="canvasLocation" x="7684" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PKj-WJ-EG2">

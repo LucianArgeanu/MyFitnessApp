@@ -19,6 +19,8 @@
 		DB882318238722E500FD4B6A /* CellTableCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB882316238722E500FD4B6A /* CellTableCollection.xib */; };
 		DB88232423897B3200FD4B6A /* CellCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88232223897B3200FD4B6A /* CellCollection.swift */; };
 		DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88232323897B3200FD4B6A /* CellCollection.xib */; };
+		DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */; };
+		DBB0D8A6239592700020513B /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8A5239592700020513B /* StepViewController.swift */; };
 		DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */; };
 		DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */; };
 		DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */; };
@@ -48,6 +50,8 @@
 		DB882316238722E500FD4B6A /* CellTableCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTableCollection.xib; sourceTree = "<group>"; };
 		DB88232223897B3200FD4B6A /* CellCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollection.swift; sourceTree = "<group>"; };
 		DB88232323897B3200FD4B6A /* CellCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollection.xib; sourceTree = "<group>"; };
+		DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		DBB0D8A5239592700020513B /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
 		DBBCA2472368C97000B7FC5A /* MyFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */,
-				DB88230D23871E1100FD4B6A /* CellTableCollection.swift */,
-				DB882316238722E500FD4B6A /* CellTableCollection.xib */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -143,7 +145,8 @@
 		DB88231A2387E4E200FD4B6A /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				DB88231C2387E4F000FD4B6A /* WorkoutTableViewCell */,
+				DB882309238718C300FD4B6A /* CellTable.swift */,
+				DB88230A238718C300FD4B6A /* CellTable.xib */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -151,27 +154,28 @@
 		DB88231B2387E4E700FD4B6A /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				DB88231D2387E50B00FD4B6A /* WorkoutCollectionCell */,
+				DB88232223897B3200FD4B6A /* CellCollection.swift */,
+				DB88232323897B3200FD4B6A /* CellCollection.xib */,
+				DB882316238722E500FD4B6A /* CellTableCollection.xib */,
+				DB88230D23871E1100FD4B6A /* CellTableCollection.swift */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
-		DB88231C2387E4F000FD4B6A /* WorkoutTableViewCell */ = {
+		DB8823262389DD5600FD4B6A /* Meal */ = {
 			isa = PBXGroup;
 			children = (
-				DB882309238718C300FD4B6A /* CellTable.swift */,
-				DB88230A238718C300FD4B6A /* CellTable.xib */,
+				DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */,
 			);
-			path = WorkoutTableViewCell;
+			path = Meal;
 			sourceTree = "<group>";
 		};
-		DB88231D2387E50B00FD4B6A /* WorkoutCollectionCell */ = {
+		DBB0D8A4239592550020513B /* Steps */ = {
 			isa = PBXGroup;
 			children = (
-				DB88232223897B3200FD4B6A /* CellCollection.swift */,
-				DB88232323897B3200FD4B6A /* CellCollection.xib */,
+				DBB0D8A5239592700020513B /* StepViewController.swift */,
 			);
-			path = WorkoutCollectionCell;
+			path = Steps;
 			sourceTree = "<group>";
 		};
 		DBBCA23E2368C97000B7FC5A = {
@@ -211,6 +215,8 @@
 		DBDA970C236F471F0035B661 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBB0D8A4239592550020513B /* Steps */,
+				DB8823262389DD5600FD4B6A /* Meal */,
 				DB8823062387177E00FD4B6A /* Workout */,
 				DB44A598237D6E4700D0FD09 /* CaloriesCalculatorControllers */,
 				DB44A597237D6E2700D0FD09 /* AuthenticationControllers */,
@@ -359,11 +365,13 @@
 			files = (
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
+				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
 				DB44A591237CB54100D0FD09 /* TableViewController.swift in Sources */,
 				DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */,
 				DB88230B238718C300FD4B6A /* CellTable.swift in Sources */,
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
+				DBB0D8A6239592700020513B /* StepViewController.swift in Sources */,
 				DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */,
 				DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
@@ -518,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8279UL7F7N;
 				INFOPLIST_FILE = MyFitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8279UL7F7N;
 				INFOPLIST_FILE = MyFitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
