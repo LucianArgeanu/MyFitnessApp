@@ -19,7 +19,7 @@ class CellTableCollection: UITableViewCell {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(UINib(nibName: "CellCollection", bundle: nil), forCellWithReuseIdentifier: "CellCollection")
     }
     
@@ -38,8 +38,6 @@ extension CellTableCollection : UICollectionViewDelegate, UICollectionViewDataSo
         
         cell.collectionImage.image = UIImage(named: imagesArray[indexPath.row])
         cell.collectionImage.layer.cornerRadius = 10.0
-        cell.collectionImage.layer.borderWidth = 3.0
-        cell.collectionImage.layer.borderColor = UIColor.black.cgColor
         cell.collectionImage.clipsToBounds = true
        
         return cell

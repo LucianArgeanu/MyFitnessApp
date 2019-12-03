@@ -10,7 +10,8 @@ import UIKit
 
 class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var array : [String] = ["getMeals", "getStep", "getWorkouts"]
+    var array : [WorkoutTableViewInfo] = WorkoutTableViewInfo.populateInfo()
+   
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,8 +19,9 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 350
+        
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
         tableView.register(UINib(nibName: "CellTable", bundle: nil), forCellReuseIdentifier: "CellTable")
         tableView.register(UINib(nibName: "CellTableCollection", bundle: nil), forCellReuseIdentifier: "CellTableCollection")
         self.navigationController?.isNavigationBarHidden = false
@@ -32,20 +34,20 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 1 || indexPath.row == 0{
+        if indexPath.row == 2 || indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
-            cell.imageCell.image = UIImage(named: array[indexPath.row])
-           
+            cell.imageCell.image = UIImage(named: array[indexPath.row].imageName)
+            cell.txt.text = array[indexPath.row].description
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableCollection", for: indexPath) as! CellTableCollection
-            if indexPath.row == 0 {
-                cell.imagesArray = ["getMeals", "getMeasure", "getWorkouts"]
-                cell.title.text = "Hello"
+            if indexPath.row == 1 {
+                cell.imagesArray = ["push", "pull", "legs"]
+                cell.title.text = array[indexPath.row].description
             }
-            else if indexPath.row == 2 {
-                cell.imagesArray = ["getMeals", "getMeals", "getMeals", "getMeals", "getMeasure", "getWorkouts"]
-                cell.title.text = "Hello"
+            else if indexPath.row == 3 {
+                cell.imagesArray = ["upperlower","lower"]
+                cell.title.text = array[indexPath.row].description
             }
             return cell
         }

@@ -21,6 +21,7 @@
 		DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88232323897B3200FD4B6A /* CellCollection.xib */; };
 		DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */; };
 		DBB0D8A6239592700020513B /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8A5239592700020513B /* StepViewController.swift */; };
+		DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */; };
 		DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */; };
 		DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */; };
 		DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */; };
@@ -52,6 +53,7 @@
 		DB88232323897B3200FD4B6A /* CellCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollection.xib; sourceTree = "<group>"; };
 		DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		DBB0D8A5239592700020513B /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewInfo.swift; sourceTree = "<group>"; };
 		DBBCA2472368C97000B7FC5A /* MyFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			children = (
 				DBDA970E236F47380035B661 /* InputData.swift */,
 				DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */,
+				DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */,
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
 				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
