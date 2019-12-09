@@ -9,15 +9,11 @@
 import UIKit
 
 struct WorkoutTableViewInfo{
-     let description : String
-     let imageName : String
+    let description : String
+    let image : UIImage
     
-     static func populateInfo() -> [WorkoutTableViewInfo]{
-          let cell1 = WorkoutTableViewInfo(description: "Full Body", imageName: "fullbody")
-          let cell2 = WorkoutTableViewInfo(description: "Push Pull Legs", imageName: "getMeals")
-         let cell3 = WorkoutTableViewInfo(description: "HIIT", imageName: "abs")
-         let cell4 = WorkoutTableViewInfo(description: "Upper Lower", imageName: "scale")
-         return [cell1,cell2,cell3,cell4]
+    init(description : String, image : UIImage){
+        self.description = description
+        self.image = image
     }
-
 }

@@ -12,7 +12,7 @@ class CellTableCollection: UITableViewCell {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var imagesArray = [String]()
+    var imagesArray = [UIImage]()
     
     @IBOutlet weak var title : UILabel!
     override func awakeFromNib() {
@@ -36,7 +36,7 @@ extension CellTableCollection : UICollectionViewDelegate, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellCollection", for: indexPath) as! CellCollection
         
         
-        cell.collectionImage.image = UIImage(named: imagesArray[indexPath.row])
+        cell.collectionImage.image = imagesArray[indexPath.row]
         cell.collectionImage.layer.cornerRadius = 10.0
         cell.collectionImage.clipsToBounds = true
        

@@ -9,15 +9,40 @@
 import UIKit
 
 class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     
     @IBOutlet weak var tableView: UITableView!
     
-    var array : [SaladsTableViewInfo] = SaladsTableViewInfo.populateInfo()
+    var array = [SaladsTableViewInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initTableView()
+        appendArray()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return array.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
+        cell.imageCell.image = array[indexPath.row].image
+        cell.txt.text = array[indexPath.row].description
+        
+        return cell
+    }
+    
+    func appendArray(){
+        array.append(SaladsTableViewInfo(description: "Roasted Sweet Potato and Chickpea Salad", image: #imageLiteral(resourceName: "chickenChickPeaSalad")))
+        array.append(SaladsTableViewInfo(description: "RBBQ Chicken Salad", image: #imageLiteral(resourceName: "bbqChickenSalad")))
+        array.append(SaladsTableViewInfo(description: "Chicken, Bacon, and Strawberry Salad", image: #imageLiteral(resourceName: "chickenBaconSalad")))
+        array.append(SaladsTableViewInfo(description: "Quinoa and Kale Protein Power Salad", image: #imageLiteral(resourceName: "quinoaSalad")))
+        array.append(SaladsTableViewInfo(description: "Turkey Nachos Salad", image: #imageLiteral(resourceName: "turkeyNachosSalad")))
+    }
+    
+    func initTableView(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 350
@@ -26,20 +51,6 @@ class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.register(UINib(nibName: "CellTable", bundle: nil), forCellReuseIdentifier: "CellTable")
         tableView.register(UINib(nibName: "CellTableCollection", bundle: nil), forCellReuseIdentifier: "CellTableCollection")
         self.navigationController?.isNavigationBarHidden = false
-        
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
-       }
-       
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           
-               let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
-           cell.imageCell.image = UIImage(named: array[indexPath.row].imageName)
-           cell.txt.text = array[indexPath.row].description
-       
-               return cell
-           }
-
 }

@@ -31,7 +31,7 @@ class TableViewCell: UITableViewCell {
     }
 
     func updateUI(){
-        img.image = UIImage(named: cellTable.imageName)
+        img.image = cellTable.image
         label.text = cellTable.description
         img.layer.cornerRadius = 12.0
         img.layer.masksToBounds = true

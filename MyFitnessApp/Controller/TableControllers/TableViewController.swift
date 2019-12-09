@@ -14,20 +14,17 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var userImage: UIImageView!
     let email = Auth.auth().currentUser?.email
     @IBOutlet weak var userLabelName: UILabel!
-    var array : [CellTableViewInfo] = CellTableViewInfo.populateInfo()
+    var array = [CellTableViewInfo]()
     var controllerArray : [String] = ["WorkoutTableViewController","MealTableViewController","StepViewController","InputDataCaloriesViewController"]
     //    ["getMeals","getWorkouts","getStep","getMeasure"]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.showsVerticalScrollIndicator = false
-        userImage.layer.cornerRadius = userImage.frame.size.width / 2
-        userImage.clipsToBounds = true
-        //        tableView.separatorStyle = .none
-        userLabelName.text = String(email ?? "Username")
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        initTableView()
+        appendArray()
+    
     }
     
     // MARK: - Table view data source
@@ -45,7 +42,7 @@ class TableViewController: UITableViewController {
         
         let cellInfo = array[indexPath.row]
         
-        cell.img.image = UIImage(named: cellInfo.imageName)
+        cell.img.image = cellInfo.image
         cell.label.text = cellInfo.description
         
         return cell
@@ -65,6 +62,24 @@ class TableViewController: UITableViewController {
         }catch{
             print("error while trying to sign out")
         }
+    }
+    
+    func appendArray(){
+        array.append(CellTableViewInfo(description: "Workouts", image: #imageLiteral(resourceName: "getWorkouts")))
+        array.append(CellTableViewInfo(description: "Meals", image: #imageLiteral(resourceName: "meals")))
+        array.append(CellTableViewInfo(description: "Step tracker", image: #imageLiteral(resourceName: "getStep")))
+        array.append(CellTableViewInfo(description: "Calorie Calculator", image: #imageLiteral(resourceName: "scale")))
+    }
+    
+    func initTableView(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.showsVerticalScrollIndicator = false
+        userImage.layer.cornerRadius = userImage.frame.size.width / 2
+        userImage.clipsToBounds = true
+        //        tableView.separatorStyle = .none
+        userLabelName.text = String(email ?? "Username")
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
 }
