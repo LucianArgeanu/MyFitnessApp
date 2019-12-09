@@ -11,8 +11,8 @@ import UIKit
 class MealTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var array : [MealTableViewInfo] = MealTableViewInfo.populateInfo()
+    var controllerArray = ["SaladsTableViewController"]
+    var array = [MealTableViewInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,11 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.register(UINib(nibName: "CellTable", bundle: nil), forCellReuseIdentifier: "CellTable")
         tableView.register(UINib(nibName: "CellTableCollection", bundle: nil), forCellReuseIdentifier: "CellTableCollection")
         self.navigationController?.isNavigationBarHidden = false
+        
+        array.append(MealTableViewInfo(description: "Salads", image: #imageLiteral(resourceName: "getMeals")))
+//        array.append(MealTableViewInfo(description: String, image: <#T##UIImage#>))
+//        array.append(MealTableViewInfo(description: String, image: <#T##UIImage#>))
+//        array.append(MealTableViewInfo(description: <#T##String#>, image: <#T##UIImage#>))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,11 +39,17 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
-        cell.imageCell.image = UIImage(named: array[indexPath.row].imageName)
+        cell.imageCell.image =  array[indexPath.row].image
         cell.txt.text = array[indexPath.row].description
     
             return cell
         }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let UIController = storyboard.instantiateViewController(withIdentifier: controllerArray[indexPath.row])
+        self.navigationController?.pushViewController(UIController, animated: true)
+    }
     }
     
 

@@ -8,17 +8,12 @@
 
 import UIKit
 
-struct SaladsTableViewInfo{
-     let description : String
-     let imageName : String
+class SaladsTableViewInfo{
+     var description : String
+     var image : UIImage
     
-     static func populateInfo() -> [SaladsTableViewInfo]{
-          let cell1 = SaladsTableViewInfo(description: "Roasted Sweet Potato and Chickpea Salad", imageName: "chickenChickPeaSalad")
-          let cell2 = SaladsTableViewInfo(description: "BBQ Chicken Salad", imageName: "bbqChickenSalad")
-         let cell3 = SaladsTableViewInfo(description: "Chicken, Bacon, and Strawberry Salad", imageName: "chickenBaconSalad")
-         let cell4 = SaladsTableViewInfo(description: "Quinoa and Kale Protein Power Salad", imageName: "quinoaSalad")
-         let cell5 = SaladsTableViewInfo(description: "Turkey Nachos Salad", imageName: "turkeyNachosSalad")
-         return [cell1,cell2,cell3,cell4,cell5]
+    init(description : String, image: UIImage){
+        self.description = description
+        self.image = image
     }
-
 }
