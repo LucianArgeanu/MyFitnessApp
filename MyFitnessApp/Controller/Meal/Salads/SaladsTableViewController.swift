@@ -11,6 +11,7 @@ import UIKit
 class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    
     @IBOutlet weak var tableView: UITableView!
     
     var array = [SaladsTableViewInfo]()
@@ -34,6 +35,13 @@ class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(identifier: "SaladViewController") as! SaladViewController
+        self.navigationController?.pushViewController(controller, animated: true)
+        controller.setup(with: array[indexPath.row])
+    }
+    
     func appendArray(){
         array.append(SaladsTableViewInfo(description: "Roasted Sweet Potato and Chickpea Salad", image: #imageLiteral(resourceName: "chickenChickPeaSalad")))
         array.append(SaladsTableViewInfo(description: "RBBQ Chicken Salad", image: #imageLiteral(resourceName: "bbqChickenSalad")))
@@ -51,6 +59,14 @@ class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.register(UINib(nibName: "CellTable", bundle: nil), forCellReuseIdentifier: "CellTable")
         tableView.register(UINib(nibName: "CellTableCollection", bundle: nil), forCellReuseIdentifier: "CellTableCollection")
         self.navigationController?.isNavigationBarHidden = false
+        
     }
     
 }
+
+
+
+
+
+
+

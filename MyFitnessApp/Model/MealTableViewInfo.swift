@@ -16,5 +16,5 @@ class MealTableViewInfo{
         self.description = description
         self.image = image
     }
-    
 }
+

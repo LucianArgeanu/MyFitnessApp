@@ -170,7 +170,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="vue-ZX-44f" userLabel="Login Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmu-fp-Klz" userLabel="Email">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmu-fp-Klz" userLabel="Email">
                                         <rect key="frame" x="56.333333333333343" y="0.0" width="262.33333333333326" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="G35-z4-MH3"/>
@@ -178,7 +178,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAw-fj-Bjf" userLabel="Password">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAw-fj-Bjf" userLabel="Password">
                                         <rect key="frame" x="56.333333333333343" y="118" width="262.33333333333326" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="kPL-uz-ja2"/>
@@ -469,6 +469,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjV-bX-GCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4660" y="1396.5517241379312"/>
+        </scene>
+        <!--Salad View Controller-->
+        <scene sceneID="FZQ-wF-E3H">
+            <objects>
+                <viewController storyboardIdentifier="SaladViewController" id="Qg5-Ns-Bdr" customClass="SaladViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KVM-4O-xW7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-p9-q3C" userLabel="ImageInformation">
+                                <rect key="frame" x="0.0" y="44" width="375" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chickenChickPeaSalad" translatesAutoresizingMaskIntoConstraints="NO" id="5D8-fe-Rd0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flo-bf-Nmr" userLabel="Salad Name">
+                                        <rect key="frame" x="137.33333333333334" y="100" width="100.33333333333334" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baD-7o-9pe">
+                                                <rect key="frame" x="25.666666666666657" y="13.666666666666659" width="49" height="22.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="EIA-Xj-91H"/>
+                                            <constraint firstItem="baD-7o-9pe" firstAttribute="centerY" secondItem="flo-bf-Nmr" secondAttribute="centerY" id="GZj-fx-onq"/>
+                                            <constraint firstItem="baD-7o-9pe" firstAttribute="leading" secondItem="flo-bf-Nmr" secondAttribute="leading" constant="25.666666666666671" id="MDs-tL-9kV"/>
+                                            <constraint firstItem="baD-7o-9pe" firstAttribute="centerX" secondItem="flo-bf-Nmr" secondAttribute="centerX" id="RZT-xT-IPN"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Znf-IU-tfO"/>
+                                            <constraint firstItem="baD-7o-9pe" firstAttribute="top" secondItem="flo-bf-Nmr" secondAttribute="top" constant="13.666666666666657" id="dDI-Dy-YSN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="flo-bf-Nmr" firstAttribute="centerX" secondItem="BB7-p9-q3C" secondAttribute="centerX" id="I6f-Zl-R77"/>
+                                    <constraint firstAttribute="height" constant="250" id="Olb-iM-dZo"/>
+                                    <constraint firstItem="5D8-fe-Rd0" firstAttribute="leading" secondItem="BB7-p9-q3C" secondAttribute="leading" id="YOe-YI-SnJ"/>
+                                    <constraint firstItem="flo-bf-Nmr" firstAttribute="centerY" secondItem="BB7-p9-q3C" secondAttribute="centerY" id="e9I-TH-pJH"/>
+                                    <constraint firstItem="5D8-fe-Rd0" firstAttribute="top" secondItem="BB7-p9-q3C" secondAttribute="top" id="i8Z-0K-ZzG"/>
+                                    <constraint firstAttribute="bottom" secondItem="5D8-fe-Rd0" secondAttribute="bottom" id="jiO-K5-M0W"/>
+                                    <constraint firstAttribute="trailing" secondItem="5D8-fe-Rd0" secondAttribute="trailing" id="upw-kH-veE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tM-oZ-zoQ" userLabel="Text">
+                                <rect key="frame" x="0.0" y="244" width="375" height="534"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n0j-t3-txo">
+                                        <rect key="frame" x="67.666666666666686" y="203" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="8b3-UW-2jX"/>
+                                            <constraint firstAttribute="height" constant="128" id="nNm-As-8px"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="n0j-t3-txo" firstAttribute="centerX" secondItem="0tM-oZ-zoQ" secondAttribute="centerX" id="FJQ-ZG-rgt"/>
+                                    <constraint firstItem="n0j-t3-txo" firstAttribute="centerY" secondItem="0tM-oZ-zoQ" secondAttribute="centerY" id="bTq-xE-hye"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BB7-p9-q3C" firstAttribute="leading" secondItem="sQ3-Bp-ZY5" secondAttribute="leading" id="AhN-9C-XG2"/>
+                            <constraint firstItem="0tM-oZ-zoQ" firstAttribute="top" secondItem="BB7-p9-q3C" secondAttribute="bottom" constant="-50" id="NKm-s5-M8V"/>
+                            <constraint firstItem="sQ3-Bp-ZY5" firstAttribute="bottom" secondItem="0tM-oZ-zoQ" secondAttribute="bottom" id="NLB-ci-FaY"/>
+                            <constraint firstItem="sQ3-Bp-ZY5" firstAttribute="trailing" secondItem="0tM-oZ-zoQ" secondAttribute="trailing" id="PKx-tA-49L"/>
+                            <constraint firstItem="BB7-p9-q3C" firstAttribute="trailing" secondItem="sQ3-Bp-ZY5" secondAttribute="trailing" id="nir-yI-RkF"/>
+                            <constraint firstItem="0tM-oZ-zoQ" firstAttribute="leading" secondItem="sQ3-Bp-ZY5" secondAttribute="leading" id="rTL-8h-Gmo"/>
+                            <constraint firstItem="BB7-p9-q3C" firstAttribute="top" secondItem="sQ3-Bp-ZY5" secondAttribute="top" id="z4r-Ic-Lni"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sQ3-Bp-ZY5"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomContainerView" destination="0tM-oZ-zoQ" id="ci9-Fp-fyy"/>
+                        <outlet property="descriptionTextView" destination="n0j-t3-txo" id="iLQ-ZQ-aQ6"/>
+                        <outlet property="titleLabel" destination="baD-7o-9pe" id="nuO-zt-xhZ"/>
+                        <outlet property="titleLabelContainerView" destination="flo-bf-Nmr" id="qGL-Rv-hUw"/>
+                        <outlet property="topContainerView" destination="BB7-p9-q3C" id="Nas-wX-JJs"/>
+                        <outlet property="topImageView" destination="5D8-fe-Rd0" id="BCn-nO-did"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYj-Gz-EXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4660" y="2150.9852216748768"/>
         </scene>
         <!--Input Data Calories View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -823,6 +918,7 @@
     </scenes>
     <resources>
         <image name="STAY FIT" width="166.66667175292969" height="166.66667175292969"/>
+        <image name="chickenChickPeaSalad" width="533.33331298828125" height="799"/>
         <image name="edgar-chaparro-sHfo3WOgGTU-unsplash" width="840" height="1260"/>
         <image name="getStep" width="1418.6666259765625" height="944"/>
         <image name="nick-nice-gPm8h3DS1s4-unsplash" width="566.66668701171875" height="1007.6666870117188"/>

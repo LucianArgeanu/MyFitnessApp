@@ -16,5 +16,4 @@ struct SaladsTableViewInfo{
         self.description = description
         self.image = image
     }
-    
 }

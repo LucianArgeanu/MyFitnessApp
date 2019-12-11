@@ -12,6 +12,7 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var array = [MealTableViewInfo]()
     var controllerArray = ["SaladsTableViewController"]
     
@@ -40,6 +41,7 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    
     func appendArray(){
         array.append(MealTableViewInfo(description: "Salads", image: #imageLiteral(resourceName: "getMeals")))
         array.append(MealTableViewInfo(description: "Chicken Recipes", image: #imageLiteral(resourceName: "chickenMeal")))
@@ -59,6 +61,10 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.register(UINib(nibName: "CellTableCollection", bundle: nil), forCellReuseIdentifier: "CellTableCollection")
         self.navigationController?.isNavigationBarHidden = false
     }
+    
 }
+
+
+
 
 
