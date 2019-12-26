@@ -6,12 +6,11 @@ target 'MyFitnessApp' do
 
   # Pods for MyFitnessApp
 
-pod 'Firebase'
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
-pod 'Firebase/Firestore'
+pod 'FirebaseCore', '6.3.1'
+pod 'FirebaseFirestore', '1.6.0'
+pod 'FirebaseAuth', '6.3.0'
+pod 'FirebaseDatabase', '6.1.2'
 pod 'ProgressHUD'
-
 
 end
 

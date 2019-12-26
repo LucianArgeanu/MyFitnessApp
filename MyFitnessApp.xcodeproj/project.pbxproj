@@ -12,6 +12,7 @@
 		DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A592237CB5F000D0FD09 /* TableViewCell.swift */; };
 		DB44A595237D5D7700D0FD09 /* CellTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */; };
 		DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB471ECA23749507009964C2 /* HomeViewController.swift */; };
+		DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB805B8F23A37E65009C0009 /* GetMenuContent.swift */; };
 		DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */; };
 		DB88230B238718C300FD4B6A /* CellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB882309238718C300FD4B6A /* CellTable.swift */; };
 		DB88230C238718C300FD4B6A /* CellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88230A238718C300FD4B6A /* CellTable.xib */; };
@@ -32,6 +33,7 @@
 		DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2502368C97000B7FC5A /* Main.storyboard */; };
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
+		DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */; };
 		DBDA970F236F47380035B661 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA970E236F47380035B661 /* InputData.swift */; };
 		DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA9711236F50710035B661 /* AuthenticationViewController.swift */; };
 		DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97132370BE560035B661 /* LoginViewController.swift */; };
@@ -48,6 +50,7 @@
 		DB44A592237CB5F000D0FD09 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewInfo.swift; sourceTree = "<group>"; };
 		DB471ECA23749507009964C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB805B8F23A37E65009C0009 /* GetMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMenuContent.swift; sourceTree = "<group>"; };
 		DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
 		DB882309238718C300FD4B6A /* CellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTable.swift; sourceTree = "<group>"; };
 		DB88230A238718C300FD4B6A /* CellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTable.xib; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		DBBCA2532368C97500B7FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWorkoutContent.swift; sourceTree = "<group>"; };
 		DBDA970E236F47380035B661 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
 		DBDA9711236F50710035B661 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		DBDA97132370BE560035B661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				DB44A597237D6E2700D0FD09 /* AuthenticationControllers */,
 				DB44A596237D6E0300D0FD09 /* TableControllers */,
 				DB471ECA23749507009964C2 /* HomeViewController.swift */,
+				DB805B8F23A37E65009C0009 /* GetMenuContent.swift */,
+				DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
 				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
+				DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
 				DBB0D8B023983CF30020513B /* SaladsTableViewInfo.swift in Sources */,
 				DB44A591237CB54100D0FD09 /* TableViewController.swift in Sources */,
@@ -401,6 +408,7 @@
 				DBB0D8B2239D99960020513B /* SaladViewController.swift in Sources */,
 				DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */,
 				DBB0D8AB2397F5C80020513B /* MealTableViewInfo.swift in Sources */,
+				DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,
 				DB44A595237D5D7700D0FD09 /* CellTableViewInfo.swift in Sources */,
 				DB88232423897B3200FD4B6A /* CellCollection.swift in Sources */,

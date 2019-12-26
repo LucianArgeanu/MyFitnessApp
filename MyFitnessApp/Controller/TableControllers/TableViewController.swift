@@ -7,23 +7,26 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
 class TableViewController: UITableViewController {
     
     @IBOutlet weak var userImage: UIImageView!
     let email = Auth.auth().currentUser?.email
     @IBOutlet weak var userLabelName: UILabel!
-    var array = [CellTableViewInfo]()
+    var array = [MenuContent]()
     var controllerArray : [String] = ["WorkoutTableViewController","MealTableViewController","StepViewController","InputDataCaloriesViewController"]
-    //    ["getMeals","getWorkouts","getStep","getMeasure"]
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initTableView()
-        appendArray()
+        GetMenuContent.getData { [weak self] (menuContent) in
+            self?.array = menuContent
+            self?.tableView?.reloadData()
+        }
+//        appendArray()
     
     }
     
@@ -41,9 +44,9 @@ class TableViewController: UITableViewController {
         
         
         let cellInfo = array[indexPath.row]
-        
-        cell.img.image = cellInfo.image
-        cell.label.text = cellInfo.description
+
+        cell.img.load(url: cellInfo.imageURL)
+        cell.label.text = cellInfo.name
         
         return cell
     }
@@ -65,10 +68,10 @@ class TableViewController: UITableViewController {
     }
     
     func appendArray(){
-        array.append(CellTableViewInfo(description: "Workouts", image: #imageLiteral(resourceName: "getWorkouts")))
-        array.append(CellTableViewInfo(description: "Meals", image: #imageLiteral(resourceName: "meals")))
-        array.append(CellTableViewInfo(description: "Step tracker", image: #imageLiteral(resourceName: "getStep")))
-        array.append(CellTableViewInfo(description: "Calorie Calculator", image: #imageLiteral(resourceName: "scale")))
+//        array.append(CellTableViewInfo(description: "Workouts", image: #imageLiteral(resourceName: "getWorkouts")))
+//        array.append(CellTableViewInfo(description: "Meals", image: #imageLiteral(resourceName: "meals")))
+//        array.append(CellTableViewInfo(description: "Step tracker", image: #imageLiteral(resourceName: "getStep")))
+//        array.append(CellTableViewInfo(description: "Calorie Calculator", image: #imageLiteral(resourceName: "scale")))
     }
     
     func initTableView(){
@@ -82,4 +85,18 @@ class TableViewController: UITableViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
