@@ -8,15 +8,36 @@
 
 import UIKit
 import FirebaseCore
+import FirebaseFirestore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        // Override point for customization after application launch.
         FirebaseApp.configure()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            Firestore.firestore().collection("test").addDocument(data: [  "name": "volare70",
+             "title": "Un ristorante frizzante di allegria e buoni piatti",
+             "comments": "Abbiamo apprezzato questo locale sia per l'arredamento che per il cibo.\nle decorazioni floreali e i tavolini a forma di fiore danno un tocco di allegria e spensieratezza al ristorante.\nIl personale è molto gentile e si è prodigato per trovarci un tavolo più comodo rispetto a quello assegnato. Il cibo è buono ed è servito con una certa cura nella preparazione dei piatti e i prezzi sono adeguati e non esagerati.\nlo consiglio vivamente..da Plaza Mayor dista davvero poco e quindi una capatina si può fare!\nNon dimenticate di prenotare, è sempre pieno.",
+             "rating": "ui_bubble_rating bubble_40",
+             "date": "06/01/2020"]) { (error) in
+                print(error)
+            }
+//            Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
+//                print(error)
+//            }
+//            Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
+//                print(error)
+//            }
+//            Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
+//                           print(error)
+//                       }
+//                       Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
+//                           print(error)
+//                       }
+        }
+
         return true
     }
 

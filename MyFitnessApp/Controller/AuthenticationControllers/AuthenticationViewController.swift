@@ -10,10 +10,10 @@ import UIKit
 
 
 class AuthenticationViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +22,7 @@ class AuthenticationViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let loginController = storyboard.instantiateViewController(identifier: "LoginViewController")
         self.navigationController?.pushViewController(loginController, animated: true)

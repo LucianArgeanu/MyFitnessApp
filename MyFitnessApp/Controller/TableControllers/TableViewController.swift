@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
         
         let cellInfo = array[indexPath.row]
 
-        cell.img.load(url: cellInfo.imageURL)
+        cell.img.sd_setImage(with: cellInfo.imageURL, completed: nil)
         cell.label.text = cellInfo.name
         
         return cell

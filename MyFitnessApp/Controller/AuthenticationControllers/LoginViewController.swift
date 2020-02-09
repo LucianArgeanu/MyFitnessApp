@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: Any) {
         
         ProgressHUD.show()
-        
+     
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] (user, error) in
             ProgressHUD.dismiss()
             if error != nil{

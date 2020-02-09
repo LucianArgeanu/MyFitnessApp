@@ -12,26 +12,28 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    var array = [MealTableViewInfo]()
-    var controllerArray = ["SaladsTableViewController"]
+    var mealsContentArray = [MealsContent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
-        appendArray()
+        GetMealsContent.getData { [weak self] (mealContentMenu) in
+            self?.mealsContentArray = mealContentMenu
+            self?.tableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return mealsContentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
-        cell.imageCell.image = array[indexPath.row].image
-        cell.txt.text = array[indexPath.row].description
-        
+        let cellInfo = mealsContentArray[indexPath.row]
+        cell.imageCell.sd_setImage(with: cellInfo.imageURL, completed: nil)
+        cell.txt.text = cellInfo.name
+        		
         return cell
     }
     
@@ -42,14 +44,14 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    func appendArray(){
-        array.append(MealTableViewInfo(description: "Salads", image: #imageLiteral(resourceName: "getMeals")))
-        array.append(MealTableViewInfo(description: "Chicken Recipes", image: #imageLiteral(resourceName: "chickenMeal")))
-        array.append(MealTableViewInfo(description: "Vegan Recipes", image: #imageLiteral(resourceName: "vegan")))
-        array.append(MealTableViewInfo(description: "Protein Shakes & Smoothie", image: #imageLiteral(resourceName: "proteinShakeMeal")))
-        array.append(MealTableViewInfo(description: "Breakfasts under 300 calories", image: #imageLiteral(resourceName: "breakfastMeal")))
-        
-    }
+//    func appendArray(){
+//        array.append(MealTableViewInfo(description: "Salads", image: #imageLiteral(resourceName: "getMeals")))
+//        array.append(MealTableViewInfo(description: "Chicken Recipes", image: #imageLiteral(resourceName: "chickenMeal")))
+//        array.append(MealTableViewInfo(description: "Vegan Recipes", image: #imageLiteral(resourceName: "vegan")))
+//        array.append(MealTableViewInfo(description: "Protein Shakes & Smoothie", image: #imageLiteral(resourceName: "proteinShakeMeal")))
+//        array.append(MealTableViewInfo(description: "Breakfasts under 300 calories", image: #imageLiteral(resourceName: "breakfastMeal")))
+//
+//    }
     
     func initTableView(){
         tableView.delegate = self

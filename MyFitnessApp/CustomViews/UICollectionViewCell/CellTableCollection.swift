@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CellTableCollection: UITableViewCell {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var imagesArray = [UIImage]()
+    var imagesArray = [URL]()
     
     @IBOutlet weak var title : UILabel!
     override func awakeFromNib() {
@@ -35,8 +36,8 @@ extension CellTableCollection : UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellCollection", for: indexPath) as! CellCollection
         
-        
-        cell.collectionImage.image = imagesArray[indexPath.row]
+        cell.collectionImage.sd_setImage(with: URL(string: "https://firebasestorage.googleapis.com/v0/b/my-fitness-app-20927.appspot.com/o/menuContent%2FgetMeals.jpeg?alt=media&token=b2a67011-d5d2-4587-b42f-d7f0ca405082"), completed: nil)
+//        cell.collectionImage.image = imagesArray[indexPath.row]
         cell.collectionImage.layer.cornerRadius = 10.0
         cell.collectionImage.clipsToBounds = true
        

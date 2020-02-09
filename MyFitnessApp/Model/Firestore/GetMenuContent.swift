@@ -20,8 +20,8 @@ class GetMenuContent {
             
             var menuContentResponse = [MenuContent]()
             documents.forEach { (document) in
-                let rawMenuContent = document.data()
-                if let menuContent = MenuContent(data: rawMenuContent) {
+                let rowMenuContent = document.data()
+                if let menuContent = MenuContent(data: rowMenuContent) {
                     menuContentResponse.append(menuContent)
                 }
             }

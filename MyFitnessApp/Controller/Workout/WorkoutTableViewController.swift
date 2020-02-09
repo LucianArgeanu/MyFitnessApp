@@ -7,50 +7,92 @@
 //
 
 import UIKit
+import SDWebImage
 
 class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var array = [WorkoutTableViewInfo]()
+    var workoutsMenu = [WorkoutMenuContent]()
+    //var workoutSchedule = [WorkoutSchedule]()
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
-        appendArray()
+        //1) incarcarea documentelor din Firestore
+        GetWorkoutContent.getData { [weak self] (workoutMenuContent) in
+            self?.workoutsMenu = workoutMenuContent
+            self?.tableView?.reloadData()
+        }
+        // 2) conversia de la firestore snapshots la entitatile tale de Workout
+        // 3) reload la tableView saafiseze datele
+        //4) in cell for row at index path, inlocuit codul sa foloseasca entitatile de la server
+//        appendArray()
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return workoutsMenu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 2 || indexPath.row == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
-            cell.imageCell.image = array[indexPath.row].image
-            cell.txt.text = array[indexPath.row].description
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableCollection", for: indexPath) as! CellTableCollection
-            if indexPath.row == 1 {
-                cell.imagesArray = [#imageLiteral(resourceName: "push"), #imageLiteral(resourceName: "pull"), #imageLiteral(resourceName: "legs")]
-                cell.title.text = array[indexPath.row].description
-            }
-            else if indexPath.row == 3 {
-                cell.imagesArray = [#imageLiteral(resourceName: "upperlower"), #imageLiteral(resourceName: "hiit")]
-                cell.title.text = array[indexPath.row].description
-            }
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
+        let cellInfo = workoutsMenu[indexPath.row]
+        cell.imageCell.sd_setImage(with: cellInfo.imageURL, completed: nil)
+        cell.txt.text = cellInfo.name
+//        let cellInfo = workoutSchedule[indexPath.row]
+//        if cellInfo.workouts > 1 {
+            //                var imagesArrayURLS = [URL]()
+            //                workoutsMenu = workoutSchedule.array.sorted(by: { (first, second) -> Bool in
+            //                    return first.subOrder ?? 0 < second.subOrder ?? 0
+            //                })
+            //                workoutSchedule[indexPath.row].workouts.forEach { (workoutMenuContent) in
+            //                    imagesArrayURLS.append(workoutMenuContent.imageURL)
+            //                }
+            //                cell.imagesArray = imagesArrayURLS
+            //                cell.title.text = workoutsMenu[indexPath.row].name
+//        } else {
+            //            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
+            //            cell.imageCell.sd_setImage(with: cellInfo.imageURL, completed: nil)
+            //            cell.txt.text = cellInfo.name
+            //            return cell
+//        }
+        
+//        let cellInfo = workoutsMenu[indexPath.row]
+//        if indexPath.row == 2 || indexPath.row == 0{
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTable", for: indexPath) as! CellTable
+//            cell.imageCell.sd_setImage(with: cellInfo.imageURL, completed: nil)
+//            cell.txt.text = cellInfo.name
+//            return cell
+//        } else {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableCollection", for: indexPath) as! CellTableCollection
+//            if indexPath.row == 1 || indexPath.row == 3 {
+//                var imagesArrayURLS = [URL]()
+//                workoutsMenu = workoutsMenu.sorted(by: { (first, second) -> Bool in
+//                    return first.subOrder ?? 0 < second.subOrder ?? 0
+//                })
+//                workoutsMenu.forEach { (workoutMenuContent) in
+//                    imagesArrayURLS.append(workoutMenuContent.imageURL)
+//                }
+//                cell.imagesArray = imagesArrayURLS
+//                cell.title.text = workoutsMenu[indexPath.row].name
+//            }
+//            return cell
+//        }
+        // workout1, workout2, workout3, workout4, workout5
+        // workoutSchedule
+        // workoutSchedule1 -> [workout1, workout3, workout10]
+        // workoutSchedule2 -> [workout10]
+        // workoutSchedule1 -> [workout5, workou10, workout9]
+        return cell
     }
     
-    func appendArray(){
-        array.append(WorkoutTableViewInfo(description: "Full Body", image: #imageLiteral(resourceName: "fullbody")))
-        array.append(WorkoutTableViewInfo(description: "Push Pull Legs", image: #imageLiteral(resourceName: "fullbody")))
-        array.append(WorkoutTableViewInfo(description: "HIIT", image: #imageLiteral(resourceName: "abs")))
-        array.append(WorkoutTableViewInfo(description: "Upper Lower", image: #imageLiteral(resourceName: "fullbody")))
-    }
-    
+//    func appendArray(){
+//        array.append(WorkoutTableViewInfo(description: "Full Body", image: #imageLiteral(resourceName: "fullbody")))
+//        array.append(WorkoutTableViewInfo(description: "Push Pull Legs", image: #imageLiteral(resourceName: "fullbody")))
+//        array.append(WorkoutTableViewInfo(description: "HIIT", image: #imageLiteral(resourceName: "abs")))
+//        array.append(WorkoutTableViewInfo(description: "Upper Lower", image: #imageLiteral(resourceName: "fullbody")))
+//    }
+//
     func initTableView(){
         tableView.delegate = self
         tableView.dataSource = self

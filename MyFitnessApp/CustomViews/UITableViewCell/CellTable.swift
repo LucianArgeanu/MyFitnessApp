@@ -11,10 +11,12 @@ import UIKit
 class CellTable: UITableViewCell {
 
     @IBOutlet weak var imageCell : UIImageView!
-    @IBOutlet weak var txt : UILabel!
+    @IBOutlet weak var txt: UILabel!
+    @IBOutlet weak var textView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        textView.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

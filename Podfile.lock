@@ -86,6 +86,9 @@ PODS:
   - nanopb/encode (0.3.9011)
   - ProgressHUD (2.51)
   - Protobuf (3.11.1)
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
 
 DEPENDENCIES:
   - FirebaseAuth (= 6.3.0)
@@ -93,6 +96,7 @@ DEPENDENCIES:
   - FirebaseDatabase (= 6.1.2)
   - FirebaseFirestore (= 1.6.0)
   - ProgressHUD
+  - SDWebImage (= 5.4.1)
 
 SPEC REPOS:
   trunk:
@@ -114,6 +118,7 @@ SPEC REPOS:
     - nanopb
     - ProgressHUD
     - Protobuf
+    - SDWebImage
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -134,7 +139,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
   Protobuf: 20d79da7f20b5928b80043b05080b816e802659e
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
 
-PODFILE CHECKSUM: 0d7b8819448b34ee129b777745aa2478244e653e
+PODFILE CHECKSUM: 80f88543c03949e293ee626b1729587971e0452b
 
 COCOAPODS: 1.8.4

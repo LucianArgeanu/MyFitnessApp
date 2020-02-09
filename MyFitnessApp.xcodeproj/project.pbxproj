@@ -26,13 +26,17 @@
 		DBB0D8AB2397F5C80020513B /* MealTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8AA2397F5C80020513B /* MealTableViewInfo.swift */; };
 		DBB0D8AE23983C440020513B /* SaladsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8AD23983C440020513B /* SaladsTableViewController.swift */; };
 		DBB0D8B023983CF30020513B /* SaladsTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8AF23983CF30020513B /* SaladsTableViewInfo.swift */; };
-		DBB0D8B2239D99960020513B /* SaladViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8B1239D99960020513B /* SaladViewController.swift */; };
+		DBB0D8B2239D99960020513B /* MealInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8B1239D99960020513B /* MealInfoViewController.swift */; };
 		DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */; };
 		DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */; };
 		DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCA24E2368C97000B7FC5A /* InputDataCaloriersViewController.swift */; };
 		DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2502368C97000B7FC5A /* Main.storyboard */; };
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
+		DBC0BA6523DF817700521D23 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0BA6323DF817700521D23 /* Ingredients.swift */; };
+		DBC0BA6623DF817700521D23 /* Ingredients.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BA6423DF817700521D23 /* Ingredients.xib */; };
+		DBC409D123C373F50090FB33 /* GetMealsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC409D023C373F50090FB33 /* GetMealsContent.swift */; };
+		DBC409D423C39C170090FB33 /* GetSaladsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC409D323C39C170090FB33 /* GetSaladsContent.swift */; };
 		DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */; };
 		DBDA970F236F47380035B661 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA970E236F47380035B661 /* InputData.swift */; };
 		DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA9711236F50710035B661 /* AuthenticationViewController.swift */; };
@@ -64,7 +68,7 @@
 		DBB0D8AA2397F5C80020513B /* MealTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewInfo.swift; sourceTree = "<group>"; };
 		DBB0D8AD23983C440020513B /* SaladsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaladsTableViewController.swift; sourceTree = "<group>"; };
 		DBB0D8AF23983CF30020513B /* SaladsTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaladsTableViewInfo.swift; sourceTree = "<group>"; };
-		DBB0D8B1239D99960020513B /* SaladViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaladViewController.swift; sourceTree = "<group>"; };
+		DBB0D8B1239D99960020513B /* MealInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfoViewController.swift; sourceTree = "<group>"; };
 		DBBCA2472368C97000B7FC5A /* MyFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBCA24A2368C97000B7FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBBCA24C2368C97000B7FC5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,10 @@
 		DBBCA2532368C97500B7FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC0BA6323DF817700521D23 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		DBC0BA6423DF817700521D23 /* Ingredients.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ingredients.xib; sourceTree = "<group>"; };
+		DBC409D023C373F50090FB33 /* GetMealsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMealsContent.swift; sourceTree = "<group>"; };
+		DBC409D323C39C170090FB33 /* GetSaladsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSaladsContent.swift; sourceTree = "<group>"; };
 		DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWorkoutContent.swift; sourceTree = "<group>"; };
 		DBDA970E236F47380035B661 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
 		DBDA9711236F50710035B661 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 				DB88232323897B3200FD4B6A /* CellCollection.xib */,
 				DB882316238722E500FD4B6A /* CellTableCollection.xib */,
 				DB88230D23871E1100FD4B6A /* CellTableCollection.swift */,
+				DBC0BA6323DF817700521D23 /* Ingredients.swift */,
+				DBC0BA6423DF817700521D23 /* Ingredients.xib */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 		DB8823262389DD5600FD4B6A /* Meal */ = {
 			isa = PBXGroup;
 			children = (
+				DBB0D8B1239D99960020513B /* MealInfoViewController.swift */,
 				DBB0D8AC23983C220020513B /* Salads */,
 				DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */,
 			);
@@ -197,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				DBB0D8AD23983C440020513B /* SaladsTableViewController.swift */,
-				DBB0D8B1239D99960020513B /* SaladViewController.swift */,
 			);
 			path = Salads;
 			sourceTree = "<group>";
@@ -236,6 +246,17 @@
 			path = MyFitnessApp;
 			sourceTree = "<group>";
 		};
+		DBC409D223C39BFA0090FB33 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				DB805B8F23A37E65009C0009 /* GetMenuContent.swift */,
+				DBC409D023C373F50090FB33 /* GetMealsContent.swift */,
+				DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */,
+				DBC409D323C39C170090FB33 /* GetSaladsContent.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
 		DBDA970C236F471F0035B661 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,8 +267,6 @@
 				DB44A597237D6E2700D0FD09 /* AuthenticationControllers */,
 				DB44A596237D6E0300D0FD09 /* TableControllers */,
 				DB471ECA23749507009964C2 /* HomeViewController.swift */,
-				DB805B8F23A37E65009C0009 /* GetMenuContent.swift */,
-				DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +283,7 @@
 		DBDA9710236F47400035B661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DBC409D223C39BFA0090FB33 /* Firestore */,
 				DBDA970E236F47380035B661 /* InputData.swift */,
 				DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */,
 				DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */,
@@ -337,6 +357,7 @@
 				DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */,
 				DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */,
 				DBDA971A2371F4C30035B661 /* GoogleService-Info.plist in Resources */,
+				DBC0BA6623DF817700521D23 /* Ingredients.xib in Resources */,
 				DB882318238722E500FD4B6A /* CellTableCollection.xib in Resources */,
 				DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */,
 				DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */,
@@ -392,9 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC0BA6523DF817700521D23 /* Ingredients.swift in Sources */,
 				DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */,
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
+				DBC409D123C373F50090FB33 /* GetMealsContent.swift in Sources */,
 				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
 				DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
@@ -402,10 +425,11 @@
 				DB44A591237CB54100D0FD09 /* TableViewController.swift in Sources */,
 				DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */,
 				DB88230B238718C300FD4B6A /* CellTable.swift in Sources */,
+				DBC409D423C39C170090FB33 /* GetSaladsContent.swift in Sources */,
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBB0D8A6239592700020513B /* StepViewController.swift in Sources */,
 				DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */,
-				DBB0D8B2239D99960020513B /* SaladViewController.swift in Sources */,
+				DBB0D8B2239D99960020513B /* MealInfoViewController.swift in Sources */,
 				DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */,
 				DBB0D8AB2397F5C80020513B /* MealTableViewInfo.swift in Sources */,
 				DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */,

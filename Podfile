@@ -11,6 +11,7 @@ pod 'FirebaseFirestore', '1.6.0'
 pod 'FirebaseAuth', '6.3.0'
 pod 'FirebaseDatabase', '6.1.2'
 pod 'ProgressHUD'
+pod 'SDWebImage', '5.4.1'
 
 end
 
