@@ -11,6 +11,9 @@
 		DB44A591237CB54100D0FD09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A590237CB54100D0FD09 /* TableViewController.swift */; };
 		DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A592237CB5F000D0FD09 /* TableViewCell.swift */; };
 		DB44A595237D5D7700D0FD09 /* CellTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */; };
+		DB4502CE23F202340095E5D6 /* ChickenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4502CD23F202340095E5D6 /* ChickenTableViewController.swift */; };
+		DB4502D023F203270095E5D6 /* GetChickenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4502CF23F203270095E5D6 /* GetChickenContent.swift */; };
+		DB4502D223F465F70095E5D6 /* GetShakeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4502D123F465F70095E5D6 /* GetShakeContent.swift */; };
 		DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB471ECA23749507009964C2 /* HomeViewController.swift */; };
 		DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB805B8F23A37E65009C0009 /* GetMenuContent.swift */; };
 		DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */; };
@@ -33,8 +36,6 @@
 		DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2502368C97000B7FC5A /* Main.storyboard */; };
 		DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2532368C97500B7FC5A /* Assets.xcassets */; };
 		DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */; };
-		DBC0BA6523DF817700521D23 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0BA6323DF817700521D23 /* Ingredients.swift */; };
-		DBC0BA6623DF817700521D23 /* Ingredients.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BA6423DF817700521D23 /* Ingredients.xib */; };
 		DBC409D123C373F50090FB33 /* GetMealsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC409D023C373F50090FB33 /* GetMealsContent.swift */; };
 		DBC409D423C39C170090FB33 /* GetSaladsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC409D323C39C170090FB33 /* GetSaladsContent.swift */; };
 		DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */; };
@@ -43,6 +44,7 @@
 		DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97132370BE560035B661 /* LoginViewController.swift */; };
 		DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97152370BE730035B661 /* RegisterViewController.swift */; };
 		DBDA971A2371F4C30035B661 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBDA97192371F4C30035B661 /* GoogleService-Info.plist */; };
+		DBDFECD723F46BD8003D0D13 /* ShakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */; };
 		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,9 @@
 		DB44A590237CB54100D0FD09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DB44A592237CB5F000D0FD09 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DB44A594237D5D7700D0FD09 /* CellTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewInfo.swift; sourceTree = "<group>"; };
+		DB4502CD23F202340095E5D6 /* ChickenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenTableViewController.swift; sourceTree = "<group>"; };
+		DB4502CF23F203270095E5D6 /* GetChickenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChickenContent.swift; sourceTree = "<group>"; };
+		DB4502D123F465F70095E5D6 /* GetShakeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShakeContent.swift; sourceTree = "<group>"; };
 		DB471ECA23749507009964C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DB805B8F23A37E65009C0009 /* GetMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMenuContent.swift; sourceTree = "<group>"; };
 		DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +82,6 @@
 		DBBCA2532368C97500B7FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBCA2562368C97500B7FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBCA2582368C97500B7FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBC0BA6323DF817700521D23 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
-		DBC0BA6423DF817700521D23 /* Ingredients.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ingredients.xib; sourceTree = "<group>"; };
 		DBC409D023C373F50090FB33 /* GetMealsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMealsContent.swift; sourceTree = "<group>"; };
 		DBC409D323C39C170090FB33 /* GetSaladsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSaladsContent.swift; sourceTree = "<group>"; };
 		DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWorkoutContent.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		DBDA97132370BE560035B661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBDA97152370BE730035B661 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DBDA97192371F4C30035B661 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTableViewController.swift; sourceTree = "<group>"; };
 		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,8 +184,6 @@
 				DB88232323897B3200FD4B6A /* CellCollection.xib */,
 				DB882316238722E500FD4B6A /* CellTableCollection.xib */,
 				DB88230D23871E1100FD4B6A /* CellTableCollection.swift */,
-				DBC0BA6323DF817700521D23 /* Ingredients.swift */,
-				DBC0BA6423DF817700521D23 /* Ingredients.xib */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -192,6 +194,8 @@
 				DBB0D8B1239D99960020513B /* MealInfoViewController.swift */,
 				DBB0D8AC23983C220020513B /* Salads */,
 				DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */,
+				DB4502CD23F202340095E5D6 /* ChickenTableViewController.swift */,
+				DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -253,6 +257,8 @@
 				DBC409D023C373F50090FB33 /* GetMealsContent.swift */,
 				DBC50EBA23A3873900726668 /* GetWorkoutContent.swift */,
 				DBC409D323C39C170090FB33 /* GetSaladsContent.swift */,
+				DB4502CF23F203270095E5D6 /* GetChickenContent.swift */,
+				DB4502D123F465F70095E5D6 /* GetShakeContent.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -357,7 +363,6 @@
 				DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */,
 				DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */,
 				DBDA971A2371F4C30035B661 /* GoogleService-Info.plist in Resources */,
-				DBC0BA6623DF817700521D23 /* Ingredients.xib in Resources */,
 				DB882318238722E500FD4B6A /* CellTableCollection.xib in Resources */,
 				DBBCA2542368C97500B7FC5A /* Assets.xcassets in Resources */,
 				DBBCA2522368C97000B7FC5A /* Main.storyboard in Resources */,
@@ -413,24 +418,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC0BA6523DF817700521D23 /* Ingredients.swift in Sources */,
 				DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */,
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
 				DBC409D123C373F50090FB33 /* GetMealsContent.swift in Sources */,
 				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
+				DB4502D023F203270095E5D6 /* GetChickenContent.swift in Sources */,
 				DBC50EBB23A3873900726668 /* GetWorkoutContent.swift in Sources */,
 				DBDA970F236F47380035B661 /* InputData.swift in Sources */,
 				DBB0D8B023983CF30020513B /* SaladsTableViewInfo.swift in Sources */,
 				DB44A591237CB54100D0FD09 /* TableViewController.swift in Sources */,
 				DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */,
 				DB88230B238718C300FD4B6A /* CellTable.swift in Sources */,
+				DBDFECD723F46BD8003D0D13 /* ShakeTableViewController.swift in Sources */,
 				DBC409D423C39C170090FB33 /* GetSaladsContent.swift in Sources */,
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBB0D8A6239592700020513B /* StepViewController.swift in Sources */,
+				DB4502CE23F202340095E5D6 /* ChickenTableViewController.swift in Sources */,
 				DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */,
 				DBB0D8B2239D99960020513B /* MealInfoViewController.swift in Sources */,
 				DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */,
+				DB4502D223F465F70095E5D6 /* GetShakeContent.swift in Sources */,
 				DBB0D8AB2397F5C80020513B /* MealTableViewInfo.swift in Sources */,
 				DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */,
 				DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */,

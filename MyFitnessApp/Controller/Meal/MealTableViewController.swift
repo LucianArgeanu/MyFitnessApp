@@ -39,7 +39,7 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(identifier: "SaladsTableViewController")
+        let controller = storyboard.instantiateViewController(identifier: "ShakeTableViewController")
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

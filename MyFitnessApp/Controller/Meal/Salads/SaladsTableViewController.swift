@@ -43,7 +43,7 @@ class SaladsTableViewController: UIViewController, UITableViewDelegate, UITableV
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "MealInfoViewController") as! MealInfoViewController
         self.navigationController?.pushViewController(controller, animated: true)
-        controller.setup(with: saladMenuArray[indexPath.row])
+        controller.setupSalad(with: saladMenuArray[indexPath.row])
     }
     
 //    func appendArray(){

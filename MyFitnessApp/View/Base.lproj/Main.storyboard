@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFX-9o-PKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.19999999999999" y="116.74876847290641"/>
+            <point key="canvasLocation" x="734" y="117"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="AnG-bE-ezA">
@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-qp-RyM">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="se0-mN-yXv" userLabel="Register Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nick-nice-gPm8h3DS1s4-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-wG-UMu">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734.00000000000023"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="vue-ZX-44f" userLabel="Login Stack View">
                                 <rect key="frame" x="0.0" y="264" width="375" height="284"/>
@@ -240,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="1484" y="-309.60591133004925"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Item-->
         <scene sceneID="Rn8-rg-kUx">
             <objects>
                 <tableViewController storyboardIdentifier="TableViewController" id="r6C-Rw-K1Y" customClass="TableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -331,6 +331,8 @@
                             <outlet property="delegate" destination="r6C-Rw-K1Y" id="BSA-TG-4RQ"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="fdO-QD-u0Z"/>
+                    <navigationItem key="navigationItem" id="i0R-Do-1wb"/>
                     <connections>
                         <outlet property="userImage" destination="xgr-xS-7Fd" id="ewD-Sj-OLs"/>
                         <outlet property="userLabelName" destination="TLu-n8-iW0" id="saC-a9-Li9"/>
@@ -338,9 +340,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-em-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="117"/>
+            <point key="canvasLocation" x="4231.1999999999998" y="116.74876847290641"/>
         </scene>
-        <!--Step View Controller-->
+        <!--Item-->
         <scene sceneID="LnQ-1v-DfX">
             <objects>
                 <viewController storyboardIdentifier="StepViewController" id="RTm-Gp-zJY" customClass="StepViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -350,12 +352,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mKz-Vd-alP"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DfW-fg-StZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jI1-ee-9ge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6174" y="-310"/>
+            <point key="canvasLocation" x="7212" y="-349.50738916256159"/>
         </scene>
-        <!--Meal Table View Controller-->
+        <!--Item-->
         <scene sceneID="0AW-vB-1MA">
             <objects>
                 <viewController storyboardIdentifier="MealTableViewController" id="5ZW-J0-C6V" customClass="MealTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,15 +391,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YbP-KV-eO5"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9gm-18-Pmw"/>
+                    <navigationItem key="navigationItem" id="3ti-BP-QW7"/>
                     <connections>
                         <outlet property="tableView" destination="B3g-RP-Gr0" id="jhF-By-oyR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MS2-B0-Cav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="589.65517241379314"/>
+            <point key="canvasLocation" x="5932" y="445.56650246305418"/>
         </scene>
-        <!--Workout Table View Controller-->
+        <!--Item-->
         <scene sceneID="HRk-ei-flq">
             <objects>
                 <viewController storyboardIdentifier="WorkoutTableViewController" id="sYE-Fh-ZL5" customClass="WorkoutTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -425,15 +430,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SNr-vI-3Sb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="t2l-Yi-wm5"/>
+                    <navigationItem key="navigationItem" id="Ydx-Ot-yqk"/>
                     <connections>
                         <outlet property="tableView" destination="nNi-vt-FI5" id="VQr-9y-9HC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVu-1o-Z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="-310.34482758620692"/>
+            <point key="canvasLocation" x="5892" y="-349.50738916256159"/>
         </scene>
-        <!--Salads Table View Controller-->
+        <!--Item-->
         <scene sceneID="EWd-Dx-mnY">
             <objects>
                 <viewController storyboardIdentifier="SaladsTableViewController" id="sQF-2A-GSk" customClass="SaladsTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -442,7 +449,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="260" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-WO-MH1">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9YN-0Y-qtW" userLabel="Salads">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
@@ -462,13 +469,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mqk-55-380"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JTl-I0-Y2u"/>
+                    <navigationItem key="navigationItem" id="AT8-sC-g77"/>
                     <connections>
                         <outlet property="tableView" destination="4Ez-WO-MH1" id="Jqr-3j-fik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjV-bX-GCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="1396.5517241379312"/>
+            <point key="canvasLocation" x="4724" y="1421"/>
         </scene>
         <!--Meal Info View Controller-->
         <scene sceneID="FZQ-wF-E3H">
@@ -717,9 +726,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYj-Gz-EXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="2150.9852216748768"/>
+            <point key="canvasLocation" x="4950" y="2224"/>
         </scene>
-        <!--Input Data Calories View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="InputDataCaloriesViewController" id="BYZ-38-t0r" customClass="InputDataCaloriesViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -924,6 +933,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yUc-SS-Oge"/>
                     <navigationItem key="navigationItem" id="g0O-HU-s37"/>
                     <connections>
                         <outlet property="activityInputLabel" destination="5N8-2F-IXb" id="bau-aH-D5d"/>
@@ -938,7 +948,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6174" y="590"/>
+            <point key="canvasLocation" x="7212" y="463.30049261083747"/>
         </scene>
         <!--Result Calories View Controller-->
         <scene sceneID="45e-sq-9cO">
@@ -1049,7 +1059,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9a-K3-Bfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7564" y="590"/>
+            <point key="canvasLocation" x="8618.3999999999996" y="462.5615763546798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PKj-WJ-EG2">
@@ -1062,12 +1072,110 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="w2m-8i-BIw" kind="relationship" relationship="rootViewController" id="8Qh-8H-v5I"/>
+                        <segue destination="w2m-8i-BIw" kind="relationship" relationship="rootViewController" id="o0U-Og-F8b"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxO-CN-5wS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767.20000000000005" y="116.74876847290641"/>
+            <point key="canvasLocation" x="-982" y="117"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8lD-Aa-XfF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="31B-Mg-6ga" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DIg-Ke-RKV"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eIB-RM-T8k">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="r6C-Rw-K1Y" kind="relationship" relationship="viewControllers" id="yAK-v6-CYe"/>
+                        <segue destination="sQF-2A-GSk" kind="relationship" relationship="viewControllers" id="1xP-5o-Yzb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgs-ue-N5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882" y="117"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Bhh-Yh-hO9">
+            <objects>
+                <viewController storyboardIdentifier="ChickenTableViewController" id="U1b-y3-nEZ" customClass="ChickenTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBE-J5-89q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="260" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-F4-vMY">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fho-5b-UjM" userLabel="Salads">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j3G-H8-YvH" firstAttribute="trailing" secondItem="9TS-F4-vMY" secondAttribute="trailing" id="3qR-d7-ITY"/>
+                            <constraint firstItem="9TS-F4-vMY" firstAttribute="top" secondItem="j3G-H8-YvH" secondAttribute="top" id="Xki-8e-XGO"/>
+                            <constraint firstItem="9TS-F4-vMY" firstAttribute="leading" secondItem="j3G-H8-YvH" secondAttribute="leading" id="hSP-bv-WfU"/>
+                            <constraint firstItem="j3G-H8-YvH" firstAttribute="bottom" secondItem="9TS-F4-vMY" secondAttribute="bottom" id="vkO-xh-gIv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j3G-H8-YvH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="h4b-IV-PrL"/>
+                    <navigationItem key="navigationItem" id="uaT-zj-LBj"/>
+                    <connections>
+                        <outlet property="tableView" destination="9TS-F4-vMY" id="MMf-hn-OPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rY2-95-sOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5892" y="1421"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="3Te-ve-zLd">
+            <objects>
+                <viewController storyboardIdentifier="ShakeTableViewController" id="bXZ-aS-ifz" customClass="ShakeTableViewController" customModule="MyFitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2EK-b7-m8O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="260" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vJ0-Sn-F6G">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OcR-vt-YMy" userLabel="Salads">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cx4-1r-GBK" firstAttribute="bottom" secondItem="vJ0-Sn-F6G" secondAttribute="bottom" id="8k7-F9-C6L"/>
+                            <constraint firstItem="vJ0-Sn-F6G" firstAttribute="leading" secondItem="cx4-1r-GBK" secondAttribute="leading" id="A5M-Yx-xSD"/>
+                            <constraint firstItem="vJ0-Sn-F6G" firstAttribute="top" secondItem="cx4-1r-GBK" secondAttribute="top" id="Dbd-H1-gBs"/>
+                            <constraint firstItem="cx4-1r-GBK" firstAttribute="trailing" secondItem="vJ0-Sn-F6G" secondAttribute="trailing" id="Xgo-zk-hhq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cx4-1r-GBK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gCB-UM-Kba"/>
+                    <navigationItem key="navigationItem" id="UJw-oo-qwz"/>
+                    <connections>
+                        <outlet property="tableView" destination="vJ0-Sn-F6G" id="b5Q-vn-uFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbO-Tj-1by" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7023" y="1421"/>
         </scene>
     </scenes>
     <resources>
