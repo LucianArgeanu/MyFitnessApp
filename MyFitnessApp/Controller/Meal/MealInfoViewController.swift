@@ -32,8 +32,8 @@ class MealInfoViewController: UIViewController{
     private var saladsInfo: SaladsMenuContent?
     private var chickenInfo: ChickenMenuContent?
     private var shakeInfo: ShakeMenuContent?
-
-
+    private var veganInfo: VeganMenuContent?
+    private var breakfastInfo: BreakfastMenuContent?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,8 @@ class MealInfoViewController: UIViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let saladMenu = shakeInfo else { return }
+       
+        guard let saladMenu = saladsInfo else { return }
         titleLabel?.attributedText = NSAttributedString(string: saladMenu.name, attributes: [.foregroundColor: UIColor.white, .font: UIFont.boldSystemFont(ofSize: 15)])
         //TODO : for image
         topImageView?.sd_setImage(with: saladMenu.imageURL, completed: nil)
@@ -55,6 +56,7 @@ class MealInfoViewController: UIViewController{
         fatValueLabel.text = saladMenu.nutrients?["fat"]
         kcalValueLabel.text = saladMenu.nutrients?["kcal"]
         
+       
     }
     
     func initialize(){
@@ -78,5 +80,13 @@ class MealInfoViewController: UIViewController{
        
     func setupChicken(with chickenInfo: ChickenMenuContent){
         self.chickenInfo = chickenInfo
+    }
+    
+    func setupVegan(with veganInfo: VeganMenuContent){
+        self.veganInfo = veganInfo
+    }
+    
+    func setupBreakfast(with breakfastInfo: BreakfastMenuContent){
+        self.breakfastInfo = breakfastInfo
     }
 }

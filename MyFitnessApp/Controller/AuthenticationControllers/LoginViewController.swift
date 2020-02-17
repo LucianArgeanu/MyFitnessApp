@@ -37,8 +37,9 @@ class LoginViewController: UIViewController {
                 self?.loginValidation()
             }else{
                 let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-                let viewController = storyboard.instantiateViewController(identifier: "TableViewController")
-                self?.navigationController?.pushViewController(viewController, animated: true)
+                let viewController = storyboard.instantiateViewController(identifier: "tabBarVC")
+                viewController.modalPresentationStyle = .overFullScreen
+                self?.present(viewController, animated: false, completion: nil)
                 //                self.performSegue(withIdentifier: "goToMain", sender: self)
             }
         }

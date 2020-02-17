@@ -13,7 +13,7 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     var mealsContentArray = [MealsContent]()
-    
+    var controllerArray = ["SaladsTableViewController", "ChickenTableViewController", "VeganTableViewController", "ShakeTableViewController", "BreakfastTableViewController"]
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
@@ -39,8 +39,13 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(identifier: "ShakeTableViewController")
+        let controller = storyboard.instantiateViewController(identifier: controllerArray[indexPath.row])
         self.navigationController?.pushViewController(controller, animated: true)
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//           let controller = storyboard.instantiateViewController(identifier:"foodviewcv") as! FoodViewController
+//        controller.setupWith(food: ....)
+//           self.navigationController?.pushViewController(controller, animated: true)
     }
     
     
@@ -67,6 +72,19 @@ class MealTableViewController: UIViewController, UITableViewDelegate, UITableVie
 }
 
 
-
+//class Product {
+//    var image: URL
+//    var description: String
+//    var calories: Int
+//    var protein: Int
+//}
+//
+//class Menu {
+//    var title: String //Vegan, Salad etc
+//    var products: [Product]
+//
+//}
+//
+//let menuContent = [Menu]()
 
 

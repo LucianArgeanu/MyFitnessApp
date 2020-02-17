@@ -16,14 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        // Override point for customization after application launch.
         FirebaseApp.configure()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            Firestore.firestore().collection("test").addDocument(data: [  "name": "",
-             "order": 0,
-             "ingredients": ["1","2"],
-             "nutrients": ["protein" : "", "kcal" : "", "fat" : "", "carbs": ""],
-             "imageURL": ""]) { (error) in
-                print(error)
-            }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//            Firestore.firestore().collection("menuBreakfast").addDocument(data: [  "name": "",
+//             "order": 0,
+//             "ingredients": ["1","2"],
+//             "nutrients": ["protein" : "", "kcal" : "", "fat" : "", "carbs": ""],
+//             "imageURL": ""]) { (error) in
+//                print(error)
+//            }
 //            Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
 //                print(error)
 //            }
@@ -36,8 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                       Firestore.firestore().collection("menuSalads").addDocument(data: ["imageURL": "", "name":"", "order": 0]) { (error) in
 //                           print(error)
 //                       }
-        }
-
+//        }
+//
         return true
     }
 

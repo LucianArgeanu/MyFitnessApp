@@ -15,6 +15,7 @@
 		DB4502D023F203270095E5D6 /* GetChickenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4502CF23F203270095E5D6 /* GetChickenContent.swift */; };
 		DB4502D223F465F70095E5D6 /* GetShakeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4502D123F465F70095E5D6 /* GetShakeContent.swift */; };
 		DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB471ECA23749507009964C2 /* HomeViewController.swift */; };
+		DB61B09A23FAF4D800FC6E2A /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB61B09923FAF4D800FC6E2A /* Auth.storyboard */; };
 		DB805B9023A37E65009C0009 /* GetMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB805B8F23A37E65009C0009 /* GetMenuContent.swift */; };
 		DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */; };
 		DB88230B238718C300FD4B6A /* CellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB882309238718C300FD4B6A /* CellTable.swift */; };
@@ -24,6 +25,9 @@
 		DB88232423897B3200FD4B6A /* CellCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88232223897B3200FD4B6A /* CellCollection.swift */; };
 		DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB88232323897B3200FD4B6A /* CellCollection.xib */; };
 		DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */; };
+		DB8F35A223F47CD3008F87DB /* VeganTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F35A123F47CD3008F87DB /* VeganTableViewController.swift */; };
+		DB8F35A423F47FD5008F87DB /* BreakfastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F35A323F47FD5008F87DB /* BreakfastTableViewController.swift */; };
+		DB8F35A623F48199008F87DB /* GetBreakfastContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F35A523F48199008F87DB /* GetBreakfastContent.swift */; };
 		DBB0D8A6239592700020513B /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8A5239592700020513B /* StepViewController.swift */; };
 		DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */; };
 		DBB0D8AB2397F5C80020513B /* MealTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0D8AA2397F5C80020513B /* MealTableViewInfo.swift */; };
@@ -45,6 +49,7 @@
 		DBDA97162370BE730035B661 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA97152370BE730035B661 /* RegisterViewController.swift */; };
 		DBDA971A2371F4C30035B661 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBDA97192371F4C30035B661 /* GoogleService-Info.plist */; };
 		DBDFECD723F46BD8003D0D13 /* ShakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */; };
+		DBDFECD923F478F9003D0D13 /* GetVeganContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFECD823F478F9003D0D13 /* GetVeganContent.swift */; };
 		DBF37417236CC3A800FF6123 /* ResultCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +64,7 @@
 		DB4502CF23F203270095E5D6 /* GetChickenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChickenContent.swift; sourceTree = "<group>"; };
 		DB4502D123F465F70095E5D6 /* GetShakeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShakeContent.swift; sourceTree = "<group>"; };
 		DB471ECA23749507009964C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB61B09923FAF4D800FC6E2A /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		DB805B8F23A37E65009C0009 /* GetMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMenuContent.swift; sourceTree = "<group>"; };
 		DB8823072387180C00FD4B6A /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
 		DB882309238718C300FD4B6A /* CellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTable.swift; sourceTree = "<group>"; };
@@ -68,6 +74,9 @@
 		DB88232223897B3200FD4B6A /* CellCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollection.swift; sourceTree = "<group>"; };
 		DB88232323897B3200FD4B6A /* CellCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCollection.xib; sourceTree = "<group>"; };
 		DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		DB8F35A123F47CD3008F87DB /* VeganTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganTableViewController.swift; sourceTree = "<group>"; };
+		DB8F35A323F47FD5008F87DB /* BreakfastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastTableViewController.swift; sourceTree = "<group>"; };
+		DB8F35A523F48199008F87DB /* GetBreakfastContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBreakfastContent.swift; sourceTree = "<group>"; };
 		DBB0D8A5239592700020513B /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
 		DBB0D8A72396CBF10020513B /* WorkoutTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewInfo.swift; sourceTree = "<group>"; };
 		DBB0D8AA2397F5C80020513B /* MealTableViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewInfo.swift; sourceTree = "<group>"; };
@@ -91,6 +100,7 @@
 		DBDA97152370BE730035B661 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DBDA97192371F4C30035B661 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTableViewController.swift; sourceTree = "<group>"; };
+		DBDFECD823F478F9003D0D13 /* GetVeganContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVeganContent.swift; sourceTree = "<group>"; };
 		DBF37416236CC3A800FF6123 /* ResultCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCaloriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +161,14 @@
 			path = CaloriesCalculatorControllers;
 			sourceTree = "<group>";
 		};
+		DB61B09823FAF4C000FC6E2A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DB61B09923FAF4D800FC6E2A /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		DB8823062387177E00FD4B6A /* Workout */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,11 +209,13 @@
 		DB8823262389DD5600FD4B6A /* Meal */ = {
 			isa = PBXGroup;
 			children = (
-				DBB0D8B1239D99960020513B /* MealInfoViewController.swift */,
-				DBB0D8AC23983C220020513B /* Salads */,
 				DB8823272389DDBB00FD4B6A /* MealTableViewController.swift */,
+				DBB0D8AD23983C440020513B /* SaladsTableViewController.swift */,
 				DB4502CD23F202340095E5D6 /* ChickenTableViewController.swift */,
 				DBDFECD623F46BD8003D0D13 /* ShakeTableViewController.swift */,
+				DB8F35A123F47CD3008F87DB /* VeganTableViewController.swift */,
+				DB8F35A323F47FD5008F87DB /* BreakfastTableViewController.swift */,
+				DBB0D8B1239D99960020513B /* MealInfoViewController.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -206,14 +226,6 @@
 				DBB0D8A5239592700020513B /* StepViewController.swift */,
 			);
 			path = Steps;
-			sourceTree = "<group>";
-		};
-		DBB0D8AC23983C220020513B /* Salads */ = {
-			isa = PBXGroup;
-			children = (
-				DBB0D8AD23983C440020513B /* SaladsTableViewController.swift */,
-			);
-			path = Salads;
 			sourceTree = "<group>";
 		};
 		DBBCA23E2368C97000B7FC5A = {
@@ -259,6 +271,8 @@
 				DBC409D323C39C170090FB33 /* GetSaladsContent.swift */,
 				DB4502CF23F203270095E5D6 /* GetChickenContent.swift */,
 				DB4502D123F465F70095E5D6 /* GetShakeContent.swift */,
+				DBDFECD823F478F9003D0D13 /* GetVeganContent.swift */,
+				DB8F35A523F48199008F87DB /* GetBreakfastContent.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -280,6 +294,7 @@
 		DBDA970D236F47270035B661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB61B09823FAF4C000FC6E2A /* Storyboards */,
 				DBBCA2502368C97000B7FC5A /* Main.storyboard */,
 				DBBCA2552368C97500B7FC5A /* LaunchScreen.storyboard */,
 			);
@@ -359,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB61B09A23FAF4D800FC6E2A /* Auth.storyboard in Resources */,
 				DB88230C238718C300FD4B6A /* CellTable.xib in Resources */,
 				DB88232523897B3200FD4B6A /* CellCollection.xib in Resources */,
 				DBBCA2572368C97500B7FC5A /* LaunchScreen.storyboard in Resources */,
@@ -421,6 +437,7 @@
 				DBB0D8A82396CBF10020513B /* WorkoutTableViewInfo.swift in Sources */,
 				DBDA97142370BE560035B661 /* LoginViewController.swift in Sources */,
 				DBDA9712236F50710035B661 /* AuthenticationViewController.swift in Sources */,
+				DB8F35A623F48199008F87DB /* GetBreakfastContent.swift in Sources */,
 				DBC409D123C373F50090FB33 /* GetMealsContent.swift in Sources */,
 				DB8823282389DDBB00FD4B6A /* MealTableViewController.swift in Sources */,
 				DB4502D023F203270095E5D6 /* GetChickenContent.swift in Sources */,
@@ -435,6 +452,7 @@
 				DBBCA24F2368C97000B7FC5A /* InputDataCaloriersViewController.swift in Sources */,
 				DBB0D8A6239592700020513B /* StepViewController.swift in Sources */,
 				DB4502CE23F202340095E5D6 /* ChickenTableViewController.swift in Sources */,
+				DB8F35A423F47FD5008F87DB /* BreakfastTableViewController.swift in Sources */,
 				DB44A593237CB5F000D0FD09 /* TableViewCell.swift in Sources */,
 				DBB0D8B2239D99960020513B /* MealInfoViewController.swift in Sources */,
 				DB471ECB23749507009964C2 /* HomeViewController.swift in Sources */,
@@ -446,9 +464,11 @@
 				DB88232423897B3200FD4B6A /* CellCollection.swift in Sources */,
 				DBBCA24B2368C97000B7FC5A /* AppDelegate.swift in Sources */,
 				DBB0D8AE23983C440020513B /* SaladsTableViewController.swift in Sources */,
+				DBDFECD923F478F9003D0D13 /* GetVeganContent.swift in Sources */,
 				DBBCA24D2368C97000B7FC5A /* SceneDelegate.swift in Sources */,
 				DB8823082387180C00FD4B6A /* WorkoutTableViewController.swift in Sources */,
 				DB88230F23871E1100FD4B6A /* CellTableCollection.swift in Sources */,
+				DB8F35A223F47CD3008F87DB /* VeganTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

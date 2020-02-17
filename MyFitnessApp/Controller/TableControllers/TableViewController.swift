@@ -22,10 +22,12 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
+        
         GetMenuContent.getData { [weak self] (menuContent) in
             self?.array = menuContent
             self?.tableView?.reloadData()
         }
+        
 //        appendArray()
     
     }
@@ -83,6 +85,7 @@ class TableViewController: UITableViewController {
         //        tableView.separatorStyle = .none
         userLabelName.text = String(email ?? "Username")
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    
     }
     
 }
